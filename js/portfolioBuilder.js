@@ -1,5 +1,6 @@
 /* Store all information related to oneself. */
-var bio = {
+var bio =
+{
   "headShot" : "images/HeadShot.jpg",
   "name" : "Christopher Oliver",
   "role" : "Software Engineer and All-around Techie",
@@ -7,17 +8,158 @@ var bio = {
   "location" : "Providence, RI but will re-locate!"
 };
 
-var education = {
-  "degree" : "M.S. Computer Science",
-  "school" : "Northeastern Univ. Boston, MA",
-  "datesAttended" : "Sep 2012 - May 2015",
-  "aboutDegree" : "Achieved a 3.83 GPA while studying: Artificial Intelligence, Mobile Application Development, Database Management Systems, Algorithms, Computer Systems, Program Design, Game Engine Design and Engineering Software for Reliablity."
+var skills =
+{
+  "categories" : [
+    {
+      "name" : "Languages",
+      "entries" : [
+        { "name" : "Java"},
+        { "name" : "C++"},
+        { "name" : "C"},
+        { "name" : "SQL"},
+        { "name" : "COBOL"},
+        { "name" : "Python"},
+        { "name" : "Lua"},
+        { "name" : "Unix Shell"},
+        { "name" : "JCL"},
+        { "name" : "Racket"},
+        { "name" : "GLSL"},
+        { "name" : "HTML(5)"},
+        { "name" : "CSS(3)"},
+        { "name" : "JSON"},
+        { "name" : "JavaScript"},
+        { "name" : "jQuery"}
+      ]
+    },
+    {
+      "name" : "Databases",
+      "entries" : [
+        { "name" : "SQLite"},
+        { "name" : "DB2"},
+        { "name" : "Oracle"},
+        { "name" : "Sybase"},
+        { "name" : "PostgreSQL"},
+        { "name" : "VSAM"}
+      ]
+    },
+    {
+      "name" : "Tools",
+      "entries" : [
+        { "name" : "Android Studio"},
+        { "name" : "IntelliJ"},
+        { "name" : "Atom"},
+        { "name" : "Eclipse RDz"},
+        { "name" : "Xcode"},
+        { "name" : "MS Visual Studio"},
+        { "name" : "ISPF"},
+        { "name" : "Toad"},
+        { "name" : "Rapid SQL"},
+        { "name" : "RTC"},
+        { "name" : "Endevor"},
+        { "name" : "DrRacket"}
+      ]
+    },
+    {
+      "name" : "Technologies",
+      "entries" : [
+        { "name" : "Android SDK"},
+        { "name" : "Bootstrap"},
+        { "name" : "OpenGL"},
+        { "name" : "Google Cloud Messaging"},
+        { "name" : "Parse Cloud Storage"},
+        { "name" : "Linux"},
+        { "name" : "Virtual Box"},
+        { "name" : "GLFW"},
+        { "name" : "zOS"},
+        { "name" : "Git"},
+        { "name" : "Subversion"},
+        { "name" : "Box2D"},
+        { "name" : "CBMC"}
+      ]
+    }
+  ]
 }
 
-var experience = {
+var education =
+{
+  "schools" : [
+    {
+      "degree" : "M.S. Computer Science",
+      "name" : "Northeastern Univ. Boston, MA",
+      "datesAttended" : "Sep 2012 - May 2015",
+      "aboutDegree" : "Achieved a 3.83 GPA while studying: Artificial Intelligence, Mobile Application Development, Database Management Systems, Algorithms, Computer Systems, Program Design, Game Engine Design and Engineering Software for Reliablity."
+    },
+    {
+      "degree" : "B.S. Finance",
+      "name" : "URI Kingston, RI",
+      "datesAttended" : "Sep 1993 - Aug 1996",
+      "aboutDegree" : "Achieved a 3.65 GPA while a student athlete on the URI Crew Team.  Go Rams!"
+    }
+  ]
+}
+
+var experience =
+{
   "title" : "Principal Software Engineer",
   "company" : "Fidelity Investments Smithfield, RI",
-  "datesWorked" : "June 2001 - Sep 2014"
+  "datesWorked" : "June 2001 - Sep 2014",
+  "accomplishments" : [
+    {
+      "name" : "Customer Account Re-engineering Project; Development Lead",
+      "description" : "Modernized a large, mission critical transfer agent system by porting it to process against a relational database.  Lead developer for both on-shore and off-shore development teams.  Built a multi-threaded COBOL application reading and updating a multi-million row DB2 datastore using large, but performant SQL cursors of my design.  Worked with DBAs to optimize DB table clustering and indexing.  Traveled to India in 2012 and 2014 to train and mentor our off-shore software engineering teams."
+    },
+    {
+      "name" : "NSCC Omnibus Infrastructure Project; Development Lead",
+      "description" : "Redesigned a single-threaded COBOL process responsible for processing very large data files from brokerage firms.  Delivered a multi-threaded COBOL process yielding a 700% performance increase over the former system.  The technology allowed Fidelity to process industry record-breaking data volume over a single weekend; whereas other mutual fund companies required several weekends to process similar volume.  Led design, development, testing and implementation phases."
+    },
+    {
+      "name" : "Extended Architect",
+      "description" : "Responsible for new technology evaluation and prototyping.  Installed, configured and evaluated an IBM zOS virtual machine (mini-mainframe) running on a RedHat Linux host.  Evaluated IBM Eclipse RDz IDE for zOS, as an early user worked directly with IBM development teams to enhance and stabilize their product."
+    },
+    {
+      "name" : "Other Accomplishments",
+      "description" : "Participated in several 24/7 on-call rotations.  Performed code and system design reviews.  Mentored new programmers."
+    }
+  ]
+}
+
+var featuredWork =
+{
+  "projects" : [
+    {
+      "name" : "Tango Me",
+      "description" : "An Exercise Game for Android",
+      "image" : "http://placekitten.com/555/300",
+      "imageAlt" : "Cute kitten 1!",
+      "codeLink" : "http://github.com/gscalvary",
+      "codeLinkDesc" : "Link to project"
+    },
+    {
+      "name" : "Word Fade",
+      "description" : "A Word Game for Android",
+      "image" : "http://placekitten.com/555/300",
+      "imageAlt" : "Cute kitten 2!",
+      "codeLink" : "http://github.com/gscalvary",
+      "codeLinkDesc" : "Link to project"
+    },
+    {
+      "name" : "Olive",
+      "description" : "A 3D Game Engine",
+      "image" : "http://placekitten.com/555/300",
+      "imageAlt" : "Cute kitten 3!",
+      "codeLink" : "http://github.com/gscalvary/Olive",
+      "codeLinkDesc" : "Link to project"
+    },
+    {
+      "name" : "This!",
+      "description" : "A Portfolio Site",
+      "image" : "http://placekitten.com/555/300",
+      "imageAlt" : "Cute kitten 4!",
+      "codeLink" : "http://github.com/gscalvary/Portfolio-Site",
+      "codeLinkDesc" : "Link to project"
+    }
+  ]
 }
 
 /* Build HTML using definitions in helper.js. */
@@ -26,10 +168,10 @@ var nameHTML = HTMLheaderName.replace("%data%", bio.name);
 var roleHTML = HTMLheaderRole.replace("%data%", bio.role);
 var msgHTML = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var locationHTML = HTMLlocation.replace("%data%", bio.location);
-var degreeHTML = HTMLdegree.replace("%data%", education.degree);
-var schoolHTML = HTMLschool.replace("%data%", education.school);
-var datesAttendedHTML = HTMLdatesAttended.replace("%data%", education.datesAttended);
-var aboutDegreeHTML = HTMLaboutDegree.replace("%data%", education.aboutDegree);
+var degreeHTML = HTMLdegree.replace("%data%", education.schools[0].degree);
+var schoolHTML = HTMLschool.replace("%data%", education.schools[0].name);
+var datesAttendedHTML = HTMLdatesAttended.replace("%data%", education.schools[0].datesAttended);
+var aboutDegreeHTML = HTMLaboutDegree.replace("%data%", education.schools[0].aboutDegree);
 var titleHTML = HTMLtitle.replace("%data%", experience.title);
 var companyHTML = HTMLcompany.replace("%data%", experience.company);
 var datesWorkedHTML = HTMLdatesWorked.replace("%data%", experience.datesWorked);
