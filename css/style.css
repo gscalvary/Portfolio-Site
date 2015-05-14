@@ -1,0 +1,46 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.background-dark {
+  background: #474747;
+  color: white;
+}
+
+.background-light {
+  background: #F3EFE0;
+}
+
+.background-white {
+  background: white;
+}
+
+.hr-dark {
+  background-color: black;
+  height: 1px;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.title-super {
+  font-size: 52px;
+}
+
+.title-headshot {
+  margin-top: 30px;
+}
+
+.footer {
+  padding-bottom: 18px;
+}
+
+.icon-padded {
+  padding: 5px;
+}
