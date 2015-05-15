@@ -162,12 +162,51 @@ var featuredWork =
   ]
 }
 
+/* Functions used to dynamically allocate divs for personal data that has from
+   1 to many entries.
+*/
+function setSkillHeading(index) {
+
+  var categoryHTML = HTMLcategory.replace("%data%", skills.categories[index].name);
+  $("#category-" + index).append(categoryHTML);
+}
+
+function setSkills(index) {
+
+  var len = skills.categories[index].entries.length;
+  for (var i = 0; i < len; i++) {
+    var skillHTML = HTMLSkill.replace("%data%", skills.categories[index].entries[i].name);
+    $("#category-" + index).append(skillHTML);
+  }
+}
+
+function buildCategories(howMany) {
+
+  for (var i = 0; i < howMany; i++) {
+    var div = document.createElement("div");
+    switch (howMany) {
+      case 4:
+        var div = document.createElement("div");
+        div.className = "col-md-3 text-center";
+        div.id = "category-" + i;
+        $("#categories").append(div);
+        setSkillHeading(i);
+        setSkills(i);
+        break;
+      default:
+        break;
+    }
+  }
+}
+
 /* Build HTML using definitions in helper.js. */
 var picHTML = HTMLheaderPic.replace("%data%", bio.headShot);
 var nameHTML = HTMLheaderName.replace("%data%", bio.name);
 var roleHTML = HTMLheaderRole.replace("%data%", bio.role);
 var msgHTML = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var locationHTML = HTMLlocation.replace("%data%", bio.location);
+var skillsColumns = skills.categories.length;
+buildCategories(skillsColumns);
 var degreeHTML = HTMLdegree.replace("%data%", education.schools[0].degree);
 var schoolHTML = HTMLschool.replace("%data%", education.schools[0].name);
 var datesAttendedHTML = HTMLdatesAttended.replace("%data%", education.schools[0].datesAttended);

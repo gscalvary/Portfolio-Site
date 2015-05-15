@@ -8,6 +8,8 @@ var HTMLheaderName = '<h1 class="title-super text-thin">%data%</h1>';
 var HTMLheaderRole = '<h3>%data%</h3>';
 var HTMLwelcomeMsg = '<h4>%data%</h4>';
 var HTMLlocation = '<h4>%data%</h4>';
+var HTMLcategory = '<h3>%data%</h3>';
+var HTMLSkill = '<h4>%data%</h4>';
 var HTMLdegree = '<h3>%data%</h3>';
 var HTMLschool = '<h3>%data%</h3>';
 var HTMLdatesAttended = '<h3>%data%</h3>';
