@@ -173,9 +173,8 @@ function setSkillHeading(index) {
 
 function setSkills(index) {
 
-  var len = skills.categories[index].entries.length;
-  for (var i = 0; i < len; i++) {
-    var skillHTML = HTMLSkill.replace("%data%", skills.categories[index].entries[i].name);
+  for (entry in skills.categories[index].entries) {
+    var skillHTML = HTMLSkill.replace("%data%", skills.categories[index].entries[entry].name);
     $("#category-" + index).append(skillHTML);
   }
 }
@@ -199,18 +198,64 @@ function buildCategories(howMany) {
   }
 }
 
+function buildEducation(howMany) {
+
+  for (var i = 0; i < howMany; i++) {
+    /* Build the rows. */
+    var header = document.createElement("div");
+    header.className = "row";
+    header.id = "school-header-" + i;
+    $("#education").append(header);
+
+    var about = document.createElement("div");
+    about.className = "row";
+    about.id = "school-about-" + i;
+    $("#education").append(about);
+
+    /* Build the divs under the rows. */
+    var degree = document.createElement("div");
+    degree.className = "col-md-4 text-center";
+    degree.id = "degree-" + i;
+    $("#school-header-" + i).append(degree);
+
+    var school = document.createElement("div");
+    school.className = "col-md-4 text-center";
+    school.id = "school-" + i;
+    $("#school-header-" + i).append(school);
+
+    var datesAttended = document.createElement("div");
+    datesAttended.className = "col-md-4 text-center";
+    datesAttended.id = "datesAttended-" + i;
+    $("#school-header-" + i).append(datesAttended);
+
+    var aboutDegree = document.createElement("div");
+    aboutDegree.className = "col-md-12 text-center";
+    aboutDegree.id = "aboutDegree-" + i;
+    $("#school-about-" + i).append(aboutDegree);
+
+    /* Build the text. */
+    var degreeHTML = HTMLdegree.replace("%data%", education.schools[i].degree);
+    var schoolHTML = HTMLschool.replace("%data%", education.schools[i].name);
+    var datesAttendedHTML = HTMLdatesAttended.replace("%data%", education.schools[i].datesAttended);
+    var aboutDegreeHTML = HTMLaboutDegree.replace("%data%", education.schools[i].aboutDegree);
+    $("#degree-" + i).append(degreeHTML);
+    $("#school-" + i).append(schoolHTML);
+    $("#datesAttended-" + i).append(datesAttendedHTML);
+    $("#aboutDegree-" + i).append(aboutDegreeHTML);
+
+    /* Add a divider, sometimes... */
+    if(i + 1 < howMany) $("#education").append(document.createElement("hr"));
+  }
+}
+
 /* Build HTML using definitions in helper.js. */
 var picHTML = HTMLheaderPic.replace("%data%", bio.headShot);
 var nameHTML = HTMLheaderName.replace("%data%", bio.name);
 var roleHTML = HTMLheaderRole.replace("%data%", bio.role);
 var msgHTML = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var locationHTML = HTMLlocation.replace("%data%", bio.location);
-var skillsColumns = skills.categories.length;
-buildCategories(skillsColumns);
-var degreeHTML = HTMLdegree.replace("%data%", education.schools[0].degree);
-var schoolHTML = HTMLschool.replace("%data%", education.schools[0].name);
-var datesAttendedHTML = HTMLdatesAttended.replace("%data%", education.schools[0].datesAttended);
-var aboutDegreeHTML = HTMLaboutDegree.replace("%data%", education.schools[0].aboutDegree);
+buildCategories(skills.categories.length);
+buildEducation(education.schools.length);
 var titleHTML = HTMLtitle.replace("%data%", experience.title);
 var companyHTML = HTMLcompany.replace("%data%", experience.company);
 var datesWorkedHTML = HTMLdatesWorked.replace("%data%", experience.datesWorked);
@@ -221,10 +266,6 @@ $("#myNameAndRole").append(roleHTML);
 $("#myPicture").append(picHTML);
 $("#about").append(msgHTML);
 $("#myLocation").append(locationHTML);
-$("#degree").append(degreeHTML);
-$("#school").append(schoolHTML);
-$("#datesAttended").append(datesAttendedHTML);
-$("#aboutDegree").append(aboutDegreeHTML);
 $("#myTitle").append(titleHTML);
 $("#myCompany").append(companyHTML);
 $("#datesWorked").append(datesWorkedHTML);
