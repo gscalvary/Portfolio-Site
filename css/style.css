@@ -2,6 +2,9 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.img-border {
+  border:2px solid #474747;
+}
 .container {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -21,7 +24,7 @@ body {
 }
 
 .hr-dark {
-  background-color: black;
+  background-color: #474747;
   height: 1px;
 }
 
