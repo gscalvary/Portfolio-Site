@@ -3,7 +3,7 @@ var bio =
 {
   "headShot" : "images/HeadShot.jpg",
   "name" : "Christopher Oliver",
-  "role" : "Software Engineer and All-around Techie",
+  "role" : "Software Engineer Super Techie",
   "welcomeMessage" : "I am a dedicated, self-motivated, and highly organized lead developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own. Let's build something together!",
   "location" : "Providence, RI but will re-locate!"
 };
@@ -104,21 +104,18 @@ var experience =
   "title" : "Principal Software Engineer",
   "company" : "Fidelity Investments Smithfield, RI",
   "datesWorked" : "June 2001 - Sep 2014",
+  "role" : "Development lead, extended architect, all-around helpful guy.",
   "accomplishments" : [
     {
-      "name" : "Customer Account Re-engineering Project; Development Lead",
       "description" : "Modernized a large, mission critical transfer agent system by porting it to process against a relational database.  Lead developer for both on-shore and off-shore development teams.  Built a multi-threaded COBOL application reading and updating a multi-million row DB2 datastore using large, but performant SQL cursors of my design.  Worked with DBAs to optimize DB table clustering and indexing.  Traveled to India in 2012 and 2014 to train and mentor our off-shore software engineering teams."
     },
     {
-      "name" : "NSCC Omnibus Infrastructure Project; Development Lead",
       "description" : "Redesigned a single-threaded COBOL process responsible for processing very large data files from brokerage firms.  Delivered a multi-threaded COBOL process yielding a 700% performance increase over the former system.  The technology allowed Fidelity to process industry record-breaking data volume over a single weekend; whereas other mutual fund companies required several weekends to process similar volume.  Led design, development, testing and implementation phases."
     },
     {
-      "name" : "Extended Architect",
       "description" : "Responsible for new technology evaluation and prototyping.  Installed, configured and evaluated an IBM zOS virtual machine (mini-mainframe) running on a RedHat Linux host.  Evaluated IBM Eclipse RDz IDE for zOS, as an early user worked directly with IBM development teams to enhance and stabilize their product."
     },
     {
-      "name" : "Other Accomplishments",
       "description" : "Participated in several 24/7 on-call rotations.  Performed code and system design reviews.  Mentored new programmers."
     }
   ]
@@ -186,7 +183,7 @@ function buildCategories(howMany) {
     switch (howMany) {
       case 4:
         var div = document.createElement("div");
-        div.className = "col-md-3 text-center";
+        div.className = "col-md-3";
         div.id = "category-" + i;
         $("#categories").append(div);
         setSkillHeading(i);
@@ -214,22 +211,22 @@ function buildEducation(howMany) {
 
     /* Build the divs under the rows. */
     var degree = document.createElement("div");
-    degree.className = "col-md-4 text-center";
+    degree.className = "col-md-4";
     degree.id = "degree-" + i;
     $("#school-header-" + i).append(degree);
 
     var school = document.createElement("div");
-    school.className = "col-md-4 text-center";
+    school.className = "col-md-8";
     school.id = "school-" + i;
     $("#school-header-" + i).append(school);
 
     var datesAttended = document.createElement("div");
-    datesAttended.className = "col-md-4 text-center";
+    datesAttended.className = "col-md-4";
     datesAttended.id = "datesAttended-" + i;
-    $("#school-header-" + i).append(datesAttended);
+    $("#school-about-" + i).append(datesAttended);
 
     var aboutDegree = document.createElement("div");
-    aboutDegree.className = "col-md-12 text-center";
+    aboutDegree.className = "col-md-8";
     aboutDegree.id = "aboutDegree-" + i;
     $("#school-about-" + i).append(aboutDegree);
 
@@ -259,6 +256,7 @@ buildEducation(education.schools.length);
 var titleHTML = HTMLtitle.replace("%data%", experience.title);
 var companyHTML = HTMLcompany.replace("%data%", experience.company);
 var datesWorkedHTML = HTMLdatesWorked.replace("%data%", experience.datesWorked);
+var myRoleHTML = HTMLrole.replace("%data%", experience.role);
 
 /* Use jQuery to update the DOM with the HTML built above. */
 $("#myNameAndRole").prepend(nameHTML);
@@ -269,3 +267,4 @@ $("#myLocation").append(locationHTML);
 $("#myTitle").append(titleHTML);
 $("#myCompany").append(companyHTML);
 $("#datesWorked").append(datesWorkedHTML);
+$("#myRole").append(myRoleHTML);

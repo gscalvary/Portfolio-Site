@@ -12,11 +12,12 @@ var HTMLcategory = '<h3>%data%</h3>';
 var HTMLSkill = '<h4>%data%</h4>';
 var HTMLdegree = '<h3>%data%</h3>';
 var HTMLschool = '<h3>%data%</h3>';
-var HTMLdatesAttended = '<h3>%data%</h3>';
+var HTMLdatesAttended = '<h4>%data%</h4>';
 var HTMLaboutDegree = '<h4>%data%</h4>';
 var HTMLtitle = '<h3>%data%</h3>';
 var HTMLcompany = '<h3>%data%</h3>';
-var HTMLdatesWorked = '<h3>%data%</h3>';
+var HTMLdatesWorked = '<h4>%data%</h4>';
+var HTMLrole = '<h4>%data%</h4>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';

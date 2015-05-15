@@ -15,6 +15,7 @@
 	</head>
 
   <body>
+    <!-- Structure the hero header. -->
     <div class="background-dark">
   		<div id="intro" class="container">
   	    <div class="row">
@@ -24,7 +25,7 @@
   	    </div>
       </div>
     </div>
-
+    <!-- Structure about. -->
     <div class="background-white">
       <div class="container">
         <div class="row">
@@ -38,7 +39,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Structure skills. -->
     <div class="background-light">
       <div id="skills" class="container">
         <div class="row">
@@ -51,7 +52,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Structure featured work. -->
     <div class="background-white">
       <div id="featured" class="container">
         <div class="row">
@@ -90,7 +91,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Structure education. -->
     <div class="background-light">
       <div id="education" class="container">
         <div class="row">
@@ -101,7 +102,7 @@
         <hr class="hr-dark">
       </div>
     </div>
-
+    <!-- Structure experience. -->
     <div class="background-white">
       <div id="experience" class="container">
         <div class="row">
@@ -111,29 +112,28 @@
         </div>
         <hr class="hr-dark">
         <div class="row">
-          <div id="myTitle" class="col-md-4 text-center"></div>
-          <div id="myCompany" class="col-md-4 text-center"></div>
-          <div id="datesWorked" class="col-md-4 text-center"></div>
+          <div id="myTitle" class="col-md-4"></div>
+          <div id="myCompany" class="col-md-8"></div>
         </div>
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h4>Customer Account Re-engineering Project; Development Lead</h4>
-                <p>Modernized a large, mission critical transfer agent system by porting it to process against a relational database.  Lead developer for both on-shore and off-shore development teams.  Built a multi-threaded COBOL application reading and updating a multi-million row DB2 datastore using large, but performant SQL cursors of my design.  Worked with DBAs to optimize DB table clustering and indexing.  Traveled to India in 2012 and 2014 to train and mentor our off-shore software engineering teams.
-                </p>
-            <h4>NSCC Omnibus Infrastructure Project; Development Lead</h4>
-                <p>Redesigned a single-threaded COBOL process responsible for processing very large data files from brokerage firms.  Delivered a multi-threaded COBOL process yielding a 700% performance increase over the former system.  The technology allowed Fidelity to process industry record-breaking data volume over a single weekend; whereas other mutual fund companies required several weekends to process similar volume.  Led design, development, testing and implementation phases.
-                </p>
-            <h4>Extended Architect</h4>
-                <p>Responsible for new technology evaluation and prototyping.  Installed, configured and evaluated an IBM zOS virtual machine (mini-mainframe) running on a RedHat Linux host.  Evaluated IBM Eclipse RDz IDE for zOS, as an early user worked directly with IBM development teams to enhance and stabilize their product.
-                </p>
-            <h4>Other Accomplishments</h4>
-                <p>Participated in several 24/7 on-call rotations.  Performed code and system design reviews.  Mentored new programmers.
-                </p>
+          <div id="datesWorked" class="col-md-4"></div>
+          <div id="myRole" class="col-md-8"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Modernized a large, mission critical transfer agent system by porting it to process against a relational database.  Lead developer for both on-shore and off-shore development teams.  Built a multi-threaded COBOL application reading and updating a multi-million row DB2 datastore using large, but performant SQL cursors of my design.  Worked with DBAs to optimize DB table clustering and indexing.  Traveled to India in 2012 and 2014 to train and mentor our off-shore software engineering teams.
+            </p>
+            <p>Redesigned a single-threaded COBOL process responsible for processing very large data files from brokerage firms.  Delivered a multi-threaded COBOL process yielding a 700% performance increase over the former system.  The technology allowed Fidelity to process industry record-breaking data volume over a single weekend; whereas other mutual fund companies required several weekends to process similar volume.  Led design, development, testing and implementation phases.
+            </p>
+            <p>Responsible for new technology evaluation and prototyping.  Installed, configured and evaluated an IBM zOS virtual machine (mini-mainframe) running on a RedHat Linux host.  Evaluated IBM Eclipse RDz IDE for zOS, as an early user worked directly with IBM development teams to enhance and stabilize their product.
+            </p>
+            <p>Participated in several 24/7 on-call rotations.  Performed code and system design reviews.  Mentored new programmers.
+            </p>
           </div>
         </div>
       </div>
     </div>
-
+    <!-- Build the footer. -->
     <div class="background-dark">
       <div id="bottom" class="container">
         <!-- Footer -->
@@ -152,7 +152,6 @@
         </div>
   	   </div>
      </div>
-
   <!-- Tango Me Modal -->
   <div class="modal fade" id="tangoMe" tabindex="-1" role="dialog" aria-labelledby="Tango Me" aria-hidden="true">
     <div class="modal-dialog">
@@ -169,7 +168,6 @@
       </div>
     </div>
   </div>
-
   <!-- Word Fade Modal -->
   <div class="modal fade" id="wordFade" tabindex="-1" role="dialog" aria-labelledby="Word Fade" aria-hidden="true">
     <div class="modal-dialog">
@@ -186,7 +184,6 @@
       </div>
     </div>
   </div>
-
   <!-- Olive Modal -->
   <div class="modal fade" id="olive" tabindex="-1" role="dialog" aria-labelledby="Olive" aria-hidden="true">
     <div class="modal-dialog">
@@ -203,7 +200,6 @@
       </div>
     </div>
   </div>
-
   <!-- My Portfolio Modal -->
   <div class="modal fade" id="myPortfolio" tabindex="-1" role="dialog" aria-labelledby="My Portfolio" aria-hidden="true">
     <div class="modal-dialog">
@@ -220,7 +216,7 @@
       </div>
     </div>
   </div>
-
+  <!-- Finally introduce the build script. -->
   <script src="js/portfolioBuilder.js"></script>
   </body>
 </html>
