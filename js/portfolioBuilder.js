@@ -3,7 +3,7 @@ var bio =
 {
   "headShot" : "images/HeadShot.jpg",
   "name" : "Christopher Oliver",
-  "role" : "Software Engineer Super Techie",
+  "role" : "Software Engineer - Super Techie",
   "welcomeMessage" : "I am a dedicated, self-motivated, and highly organized lead developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own. Let's build something together!",
   "location" : "Providence, RI but will re-locate!"
 };
@@ -129,7 +129,7 @@ var featuredWork =
       "description" : "An Exercise Game for Android",
       "image" : "http://placekitten.com/555/300",
       "imageAlt" : "Cute kitten 1!",
-      "codeLink" : "http://github.com/gscalvary",
+      "codeLink" : "http://github.com/gscalvary/Tango-Me",
       "codeLinkDesc" : "Link to project"
     },
     {
@@ -268,3 +268,46 @@ $("#myTitle").append(titleHTML);
 $("#myCompany").append(companyHTML);
 $("#datesWorked").append(datesWorkedHTML);
 $("#myRole").append(myRoleHTML);
+
+(function($) {
+
+    $.fn.parallax = function(options) {
+
+        var windowHeight = $(window).height();
+
+        // Establish default settings
+        var settings = $.extend({
+            speed        : 0.15
+        }, options);
+
+        // Iterate over each object in collection
+        return this.each( function() {
+
+        	// Save a reference to the element
+        	var $this = $(this);
+
+        	// Set up Scroll Handler
+        	$(document).scroll(function(){
+
+    		        var scrollTop = $(window).scrollTop();
+            	        var offset = $this.offset().top;
+            	        var height = $this.outerHeight();
+
+    		// Check if above or below viewport
+			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+				return;
+			}
+
+			var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+
+                 // Apply the Y Background Position to Set the Parallax Effect
+    			$this.css('background-position', 'center ' + yBgPosition + 'px');
+
+        	});
+        });
+    }
+}(jQuery));
+
+$('.background-img').parallax({
+	speed :	0.15
+});
