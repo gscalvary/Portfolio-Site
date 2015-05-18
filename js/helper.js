@@ -18,6 +18,7 @@ var HTMLtitle = '<h3>%data%</h3>';
 var HTMLcompany = '<h3>%data%</h3>';
 var HTMLdatesWorked = '<h4>%data%</h4>';
 var HTMLrole = '<h4>%data%</h4>';
+var HTMLaccomplishment = '<p>%data%</p>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';

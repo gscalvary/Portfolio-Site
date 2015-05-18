@@ -4,7 +4,7 @@ var bio =
   "headShot" : "images/HeadShot.jpg",
   "name" : "Christopher Oliver",
   "role" : "Software Engineer - Super Techie",
-  "welcomeMessage" : "I am a dedicated, self-motivated, and highly organized lead developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own. Let's build something together!",
+  "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own. Let's build something together!",
   "location" : "Providence, RI but will re-locate!"
 };
 
@@ -57,6 +57,8 @@ var skills =
         { "name" : "Rapid SQL"},
         { "name" : "RTC"},
         { "name" : "Endevor"},
+        { "name" : "pgAdmin3"},
+        { "name" : "Maya"},
         { "name" : "DrRacket"}
       ]
     },
@@ -68,6 +70,8 @@ var skills =
         { "name" : "OpenGL"},
         { "name" : "Google Cloud Messaging"},
         { "name" : "Parse Cloud Storage"},
+        { "name" : "OSX"},
+        { "name" : "Windows"},
         { "name" : "Linux"},
         { "name" : "Virtual Box"},
         { "name" : "GLFW"},
@@ -101,22 +105,32 @@ var education =
 
 var experience =
 {
-  "title" : "Principal Software Engineer",
-  "company" : "Fidelity Investments Smithfield, RI",
-  "datesWorked" : "June 2001 - Sep 2014",
-  "role" : "Development lead, extended architect, all-around helpful guy.",
-  "accomplishments" : [
+  "jobs" : [
     {
-      "description" : "Modernized a large, mission critical transfer agent system by porting it to process against a relational database.  Lead developer for both on-shore and off-shore development teams.  Built a multi-threaded COBOL application reading and updating a multi-million row DB2 datastore using large, but performant SQL cursors of my design.  Worked with DBAs to optimize DB table clustering and indexing.  Traveled to India in 2012 and 2014 to train and mentor our off-shore software engineering teams."
-    },
-    {
-      "description" : "Redesigned a single-threaded COBOL process responsible for processing very large data files from brokerage firms.  Delivered a multi-threaded COBOL process yielding a 700% performance increase over the former system.  The technology allowed Fidelity to process industry record-breaking data volume over a single weekend; whereas other mutual fund companies required several weekends to process similar volume.  Led design, development, testing and implementation phases."
-    },
-    {
-      "description" : "Responsible for new technology evaluation and prototyping.  Installed, configured and evaluated an IBM zOS virtual machine (mini-mainframe) running on a RedHat Linux host.  Evaluated IBM Eclipse RDz IDE for zOS, as an early user worked directly with IBM development teams to enhance and stabilize their product."
-    },
-    {
-      "description" : "Participated in several 24/7 on-call rotations.  Performed code and system design reviews.  Mentored new programmers."
+      "title" : "Principal Software Engineer",
+      "company" : "Fidelity Investments Smithfield, RI",
+      "datesWorked" : "June 2001 - Sep 2014",
+      "role" : "Development lead, extended architect, all-around helpful guy.",
+      "accomplishments" : [
+        {
+          "description" : "This entry represents three development jobs I held at Fidelity each under a different sub-company in a different physical location.  I started in 2001 as an associate software engineer and earned three promotions along the way leaving as a principal software engineer, a role I held for five years.  Here are some highlights:"
+        },
+        {
+          "description" : "Modernized a large, mission critical transfer agent system by porting it’s back-end web services to process against a relational database.  These services support all customer data view and update operations for advisor.fidelity.com and run concurrently with long-running batch processes that also update the database.  Lead developer for both on-shore and off-shore development teams."
+        },
+        {
+          "description" : "Built a multi-threaded COBOL application reading and updating a multi-million row DB2 database using large, but performant, SQL cursors of my design.  Worked with DBAs to optimize DB table clustering and indexing to support performance, eliminate deadlocks and handle restarts in the event of mid-process failure."
+        },
+        {
+          "description" : "Redesigned a single-threaded COBOL process responsible for processing very large data files from brokerage firms.  Delivered a multi-threaded COBOL process yielding a 700% performance increase over the former system.  The technology allowed Fidelity to process industry record-breaking data volume over a single weekend; whereas other mutual fund companies required several weekends to process similar volume.  Led design, development, testing and implementation phases."
+        },
+        {
+          "description" : "Responsible for new technology evaluation and prototyping.  Installed, configured and evaluated an IBM zOS virtual machine (mini-mainframe) running on a RedHat Linux host.  Evaluated IBM Eclipse RDz IDE for zOS, as an early user worked directly with IBM development teams, under a non-disclosure agreement, to enhance and stabilize their product."
+        },
+        {
+          "description" : "Participated in several 24/7 on-call rotations.  Performed code and system design reviews.  Mentored new programmers.  Traveled to India in 2012 and 2014 to train and mentor our off-shore software engineering teams."
+        }
+      ]
     }
   ]
 }
@@ -125,7 +139,17 @@ var featuredWork =
 {
   "projects" : [
     {
+      "name" : "This!",
+      "date" : "Summer 2015",
+      "description" : "A Portfolio Site",
+      "image" : "http://placekitten.com/555/300",
+      "imageAlt" : "Cute kitten 4!",
+      "codeLink" : "http://github.com/gscalvary/Portfolio-Site",
+      "codeLinkDesc" : "Link to project"
+    },
+    {
       "name" : "Tango Me",
+      "date" : "Spring 2015",
       "description" : "An Exercise Game for Android",
       "image" : "http://placekitten.com/555/300",
       "imageAlt" : "Cute kitten 1!",
@@ -134,14 +158,16 @@ var featuredWork =
     },
     {
       "name" : "Word Fade",
+      "date" : "Spring 2015",
       "description" : "A Word Game for Android",
       "image" : "http://placekitten.com/555/300",
       "imageAlt" : "Cute kitten 2!",
-      "codeLink" : "http://github.com/gscalvary",
-      "codeLinkDesc" : "Link to project"
+      "codeLink" : "",
+      "codeLinkDesc" : ""
     },
     {
       "name" : "Olive",
+      "date" : "Fall 2014",
       "description" : "A 3D Game Engine",
       "image" : "http://placekitten.com/555/300",
       "imageAlt" : "Cute kitten 3!",
@@ -149,11 +175,12 @@ var featuredWork =
       "codeLinkDesc" : "Link to project"
     },
     {
-      "name" : "This!",
-      "description" : "A Portfolio Site",
+      "name" : "Porperty Ladder",
+      "date" : "Summer 2013",
+      "description" : "A Relational Databases",
       "image" : "http://placekitten.com/555/300",
-      "imageAlt" : "Cute kitten 4!",
-      "codeLink" : "http://github.com/gscalvary/Portfolio-Site",
+      "imageAlt" : "Cute kitten 5!",
+      "codeLink" : "http://github.com/gscalvary/Property-Ladder",
       "codeLinkDesc" : "Link to project"
     }
   ]
@@ -245,6 +272,67 @@ function buildEducation(howMany) {
   }
 }
 
+function buildExperience(howMany) {
+
+  for (var i = 0; i < howMany; i++) {
+    /* Build the rows. */
+    var title = document.createElement("div");
+    title.className = "row";
+    title.id = "job-title-" + i;
+    $("#experience").append(title);
+
+    var subTitle = document.createElement("div");
+    subTitle.className = "row";
+    subTitle.id = "job-sub-title-" + i;
+    $("#experience").append(subTitle);
+
+    var details = document.createElement("div");
+    details.className = "row";
+    details.id = "job-details-" + i;
+    $("#experience").append(details);
+
+    /* Build the divs under the rows. */
+    var myTitle = document.createElement("div");
+    myTitle.className = "col-md-4";
+    myTitle.id = "myTitle-" + i;
+    $("#job-title-" + i).append(myTitle);
+
+    var myCompany = document.createElement("div");
+    myCompany.className = "col-md-8";
+    myCompany.id = "myCompany-" + i;
+    $("#job-title-" + i).append(myCompany);
+
+    var datesWorked = document.createElement("div");
+    datesWorked.className = "col-md-4";
+    datesWorked.id = "datesWorked-" + i;
+    $("#job-sub-title-" + i).append(datesWorked);
+
+    var myRole = document.createElement("div");
+    myRole.className = "col-md-8";
+    myRole.id = "myRole-" + i;
+    $("#job-sub-title-" + i).append(myRole);
+
+    var myDetails = document.createElement("div");
+    myDetails.className = "col-md-12";
+    myDetails.id = "myDetails-" + i;
+    $("#job-details-" + i).append(myDetails);
+
+    /* Build the text. */
+    var titleHTML = HTMLtitle.replace("%data%", experience.jobs[i].title);
+    var companyHTML = HTMLcompany.replace("%data%", experience.jobs[i].company);
+    var datesWorkedHTML = HTMLdatesWorked.replace("%data%", experience.jobs[i].datesWorked);
+    var myRoleHTML = HTMLrole.replace("%data%", experience.jobs[i].role);
+    $("#myTitle-" + i).append(titleHTML);
+    $("#myCompany-" + i).append(companyHTML);
+    $("#datesWorked-" + i).append(datesWorkedHTML);
+    $("#myRole-" + i).append(myRoleHTML);
+    for(accomplishment in experience.jobs[i].accomplishments) {
+      var descriptionHTML = HTMLaccomplishment.replace("%data%", experience.jobs[i].accomplishments[accomplishment].description);
+      $("#myDetails-" + i).append(descriptionHTML);
+    }
+  }
+}
+
 /* Build HTML using definitions in helper.js. */
 var picHTML = HTMLheaderPic.replace("%data%", bio.headShot);
 var nameHTML = HTMLheaderName.replace("%data%", bio.name);
@@ -253,10 +341,7 @@ var msgHTML = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var locationHTML = HTMLlocation.replace("%data%", bio.location);
 buildCategories(skills.categories.length);
 buildEducation(education.schools.length);
-var titleHTML = HTMLtitle.replace("%data%", experience.title);
-var companyHTML = HTMLcompany.replace("%data%", experience.company);
-var datesWorkedHTML = HTMLdatesWorked.replace("%data%", experience.datesWorked);
-var myRoleHTML = HTMLrole.replace("%data%", experience.role);
+buildExperience(experience.jobs.length);
 
 /* Use jQuery to update the DOM with the HTML built above. */
 $("#myNameAndRole").prepend(nameHTML);
@@ -264,50 +349,3 @@ $("#myNameAndRole").append(roleHTML);
 $("#myPicture").append(picHTML);
 $("#about").append(msgHTML);
 $("#myLocation").append(locationHTML);
-$("#myTitle").append(titleHTML);
-$("#myCompany").append(companyHTML);
-$("#datesWorked").append(datesWorkedHTML);
-$("#myRole").append(myRoleHTML);
-
-(function($) {
-
-    $.fn.parallax = function(options) {
-
-        var windowHeight = $(window).height();
-
-        // Establish default settings
-        var settings = $.extend({
-            speed        : 0.15
-        }, options);
-
-        // Iterate over each object in collection
-        return this.each( function() {
-
-        	// Save a reference to the element
-        	var $this = $(this);
-
-        	// Set up Scroll Handler
-        	$(document).scroll(function(){
-
-    		        var scrollTop = $(window).scrollTop();
-            	        var offset = $this.offset().top;
-            	        var height = $this.outerHeight();
-
-    		// Check if above or below viewport
-			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-				return;
-			}
-
-			var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-
-                 // Apply the Y Background Position to Set the Parallax Effect
-    			$this.css('background-position', 'center ' + yBgPosition + 'px');
-
-        	});
-        });
-    }
-}(jQuery));
-
-$('.background-img').parallax({
-	speed :	0.15
-});
