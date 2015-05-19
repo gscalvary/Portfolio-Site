@@ -145,7 +145,7 @@ var featuredWork =
       "image" : "http://placekitten.com/555/300",
       "imageAlt" : "Cute kitten 4!",
       "codeLink" : "http://github.com/gscalvary/Portfolio-Site",
-      "codeLinkDesc" : "Link to project"
+      "codeLinkDesc" : "See the code on GitHub"
     },
     {
       "name" : "Tango Me",
@@ -154,7 +154,7 @@ var featuredWork =
       "image" : "http://placekitten.com/555/300",
       "imageAlt" : "Cute kitten 1!",
       "codeLink" : "http://github.com/gscalvary/Tango-Me",
-      "codeLinkDesc" : "Link to project"
+      "codeLinkDesc" : "See the code on GitHub"
     },
     {
       "name" : "Word Fade",
@@ -172,16 +172,16 @@ var featuredWork =
       "image" : "http://placekitten.com/555/300",
       "imageAlt" : "Cute kitten 3!",
       "codeLink" : "http://github.com/gscalvary/Olive",
-      "codeLinkDesc" : "Link to project"
+      "codeLinkDesc" : "See the code on GitHub"
     },
     {
-      "name" : "Porperty Ladder",
+      "name" : "Property Ladder",
       "date" : "Summer 2013",
       "description" : "A Relational Databases",
       "image" : "http://placekitten.com/555/300",
       "imageAlt" : "Cute kitten 5!",
       "codeLink" : "http://github.com/gscalvary/Property-Ladder",
-      "codeLinkDesc" : "Link to project"
+      "codeLinkDesc" : "See the code on GitHub"
     }
   ]
 }
@@ -326,9 +326,45 @@ function buildExperience(howMany) {
     $("#myCompany-" + i).append(companyHTML);
     $("#datesWorked-" + i).append(datesWorkedHTML);
     $("#myRole-" + i).append(myRoleHTML);
+
     for(accomplishment in experience.jobs[i].accomplishments) {
       var descriptionHTML = HTMLaccomplishment.replace("%data%", experience.jobs[i].accomplishments[accomplishment].description);
       $("#myDetails-" + i).append(descriptionHTML);
+    }
+  }
+}
+
+function buildFeaturedWork(howMany) {
+
+  var numRows = Math.ceil(howMany/2);
+
+  for(var i = 0; i < numRows; i++) {
+    /* Build the rows. */
+    var works = document.createElement("div");
+    works.className = "row";
+    works.id = "works-" + i;
+    $("#featured").append(works);
+
+    /* Build the divs under the rows. */
+    for(var j = 0; j < 2; j++) {
+      var work = document.createElement("div");
+      work.className = "col-md-6";
+      var k = i * 2 + j;
+      work.id = "myWork-" + k;
+      $("#works-" + i).append(work);
+      /* Add the data. */
+      if(k < featuredWork.projects.length) {
+        var workImageHTML = HTMLWorkImage.replace("%dataSrc%", featuredWork.projects[k].image).replace("%dataAlt%", featuredWork.projects[k].imageAlt).replace("%dataTarget%", "#" + featuredWork.projects[k].name);
+        var workTitleHTML = HTMLWorkTitle.replace("%data%", featuredWork.projects[k].name);
+        var workSubTitleHTML = HTMLWorkSubTitle.replace("%data%", featuredWork.projects[k].description);
+        var workDateHTML = HTMLWorkDate.replace("%data%", featuredWork.projects[k].date);
+        var workLinkHTML = HTMLWorkLink.replace("%dataLink%", featuredWork.projects[k].codeLink).replace("%dataLinkText%", featuredWork.projects[k].codeLinkDesc);
+        $("#myWork-" + k).append(workImageHTML);
+        $("#myWork-" + k).append(workTitleHTML);
+        $("#myWork-" + k).append(workSubTitleHTML);
+        $("#myWork-" + k).append(workDateHTML);
+        $("#myWork-" + k).append(workLinkHTML);
+      }
     }
   }
 }
@@ -339,13 +375,14 @@ var nameHTML = HTMLheaderName.replace("%data%", bio.name);
 var roleHTML = HTMLheaderRole.replace("%data%", bio.role);
 var msgHTML = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var locationHTML = HTMLlocation.replace("%data%", bio.location);
-buildCategories(skills.categories.length);
-buildEducation(education.schools.length);
-buildExperience(experience.jobs.length);
-
 /* Use jQuery to update the DOM with the HTML built above. */
 $("#myNameAndRole").prepend(nameHTML);
 $("#myNameAndRole").append(roleHTML);
 $("#myPicture").append(picHTML);
 $("#about").append(msgHTML);
 $("#myLocation").append(locationHTML);
+/* Dynamically modify the DOM for personal information with 1 to many entries. */
+buildCategories(skills.categories.length);
+buildFeaturedWork(featuredWork.projects.length);
+buildEducation(education.schools.length);
+buildExperience(experience.jobs.length);
