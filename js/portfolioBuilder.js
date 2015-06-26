@@ -3,7 +3,7 @@ var bio =
 {
   "headShot" : "images/HeadShot.jpg",
   "name" : "Christopher Oliver",
-  "role" : "Software Engineer - Super Techie",
+  "role" : "Software Engineer - Techie",
   "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own. Let's build something together!",
   "location" : "Providence, RI but will re-locate!"
 };
