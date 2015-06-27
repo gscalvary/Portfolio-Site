@@ -4,7 +4,7 @@ var bio =
   "headShot" : "images/HeadShot.jpg",
   "name" : "Christopher Oliver",
   "role" : "Software Engineer - Techie",
-  "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own. Let's build something together!",
+  "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own.",
   "location" : "Providence, RI but will re-locate!"
 };
 
@@ -142,8 +142,8 @@ var featuredWork =
       "name" : "This!",
       "date" : "Summer 2015",
       "description" : "A Portfolio Site",
-      "image" : "http://placekitten.com/555/300",
-      "imageAlt" : "Cute kitten 4!",
+      "image" : "images/PortfolioSite.jpg",
+      "imageAlt" : "Portfolio Site Screen Shot",
       "codeLink" : "http://github.com/gscalvary/Portfolio-Site",
       "codeLinkDesc" : "See the code on GitHub"
     },
@@ -151,8 +151,8 @@ var featuredWork =
       "name" : "Tango Me",
       "date" : "Spring 2015",
       "description" : "An Exercise Game for Android",
-      "image" : "http://placekitten.com/555/300",
-      "imageAlt" : "Cute kitten 1!",
+      "image" : "images/TangoMe.jpg",
+      "imageAlt" : "Tango Me Screen Shot",
       "codeLink" : "http://github.com/gscalvary/Tango-Me",
       "codeLinkDesc" : "See the code on GitHub"
     },
@@ -160,8 +160,8 @@ var featuredWork =
       "name" : "Word Fade",
       "date" : "Spring 2015",
       "description" : "A Word Game for Android",
-      "image" : "http://placekitten.com/555/300",
-      "imageAlt" : "Cute kitten 2!",
+      "image" : "images/WordFade.jpg",
+      "imageAlt" : "Word Fade Screen Shot",
       "codeLink" : "",
       "codeLinkDesc" : ""
     },
@@ -169,17 +169,17 @@ var featuredWork =
       "name" : "Olive",
       "date" : "Fall 2014",
       "description" : "A 3D Game Engine",
-      "image" : "http://placekitten.com/555/300",
-      "imageAlt" : "Cute kitten 3!",
+      "image" : "images/Olive.jpg",
+      "imageAlt" : "Olive Screen Shot",
       "codeLink" : "http://github.com/gscalvary/Olive",
       "codeLinkDesc" : "See the code on GitHub"
     },
     {
       "name" : "Property Ladder",
       "date" : "Summer 2013",
-      "description" : "A Relational Databases",
-      "image" : "http://placekitten.com/555/300",
-      "imageAlt" : "Cute kitten 5!",
+      "description" : "A Relational Database",
+      "image" : "images/PropertyLadder.jpg",
+      "imageAlt" : "Property Ladder Database Design",
       "codeLink" : "http://github.com/gscalvary/Property-Ladder",
       "codeLinkDesc" : "See the code on GitHub"
     }
