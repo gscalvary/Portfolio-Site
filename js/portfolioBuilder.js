@@ -49,6 +49,7 @@ var skills =
         { "name" : "Android Studio"},
         { "name" : "IntelliJ"},
         { "name" : "Atom"},
+        { "name" : "Ant"},
         { "name" : "Eclipse RDz"},
         { "name" : "Xcode"},
         { "name" : "MS Visual Studio"},
@@ -140,6 +141,7 @@ var featuredWork =
   "projects" : [
     {
       "name" : "This!",
+      "id" : "myPortfolio",
       "date" : "Summer 2015",
       "description" : "A Portfolio Site",
       "image" : "images/PortfolioSite.jpg",
@@ -148,7 +150,18 @@ var featuredWork =
       "codeLinkDesc" : "See the code on GitHub"
     },
     {
+      "name" : "Basic HTTP Web Server",
+      "id" : "basicHTTPWebServer",
+      "date" : "Summer 2015",
+      "description" : "A Multi-threaded Web Server",
+      "image" : "images/HTTPWebServer.jpg",
+      "imageAlt" : "Web Server Running Screen Shot",
+      "codeLink" : "http://github.com/gscalvary/myBasicHTTPServer",
+      "codeLinkDesc" : "See the code on GitHub"
+    },
+    {
       "name" : "Tango Me",
+      "id" : "tangoMe",
       "date" : "Spring 2015",
       "description" : "An Exercise Game for Android",
       "image" : "images/TangoMe.jpg",
@@ -158,6 +171,7 @@ var featuredWork =
     },
     {
       "name" : "Word Fade",
+      "id" : "wordFade",
       "date" : "Spring 2015",
       "description" : "A Word Game for Android",
       "image" : "images/WordFade.jpg",
@@ -167,6 +181,7 @@ var featuredWork =
     },
     {
       "name" : "Olive",
+      "id" : "olive",
       "date" : "Fall 2014",
       "description" : "A 3D Game Engine",
       "image" : "images/Olive.jpg",
@@ -176,6 +191,7 @@ var featuredWork =
     },
     {
       "name" : "Property Ladder",
+      "id" : "propertyLadder",
       "date" : "Summer 2013",
       "description" : "A Relational Database",
       "image" : "images/PropertyLadder.jpg",
@@ -354,7 +370,7 @@ function buildFeaturedWork(howMany) {
       $("#works-" + i).append(work);
       /* Add the data. */
       if(k < featuredWork.projects.length) {
-        var workImageHTML = HTMLWorkImage.replace("%dataSrc%", featuredWork.projects[k].image).replace("%dataAlt%", featuredWork.projects[k].imageAlt).replace("%dataTarget%", "#" + featuredWork.projects[k].name);
+        var workImageHTML = HTMLWorkImage.replace("%dataSrc%", featuredWork.projects[k].image).replace("%dataAlt%", featuredWork.projects[k].imageAlt).replace("%dataTarget%", "#" + featuredWork.projects[k].id);
         var workTitleHTML = HTMLWorkTitle.replace("%data%", featuredWork.projects[k].name);
         var workSubTitleHTML = HTMLWorkSubTitle.replace("%data%", featuredWork.projects[k].description);
         var workDateHTML = HTMLWorkDate.replace("%data%", featuredWork.projects[k].date);
