@@ -1,9 +1,6 @@
-/*
-This file contains all of the code running in the background that makes
-portfolioBuilder.js possible.
-*/
+/* This file contains the HTML variables used by portfolioBuilder.js. */
 
-var HTMLheaderPic = '<img class="title-headshot img-responsive center-block img-circle" src="%data%" alt="Photo of Chris">';
+var HTMLheaderPic = '<img class="title-headshot img-responsive center-block img-circle" src="%data%" alt="Photo of Site Owner">';
 var HTMLheaderName = '<h1 class="title-super text-thin">%data%</h1>';
 var HTMLheaderRole = '<h3>%data%</h3>';
 var HTMLwelcomeMsg = '<h4>%data%</h4>';
@@ -24,3 +21,4 @@ var HTMLcompany = '<h3>%data%</h3>';
 var HTMLdatesWorked = '<h4>%data%</h4>';
 var HTMLrole = '<h4>%data%</h4>';
 var HTMLaccomplishment = '<p>%data%</p>';
+var HTMLfooterIcon = '<a href=%dataLink%><img class="img-responsive pull-right icon-padded" src=%dataSrc% alt=%dataAlt%></a>';
