@@ -4,7 +4,7 @@ var bio =
 {
   "headShot" : "images/HeadShot.jpg",
   "name" : "Christopher Oliver",
-  "role" : "Software Engineer - Techie",
+  "role" : ["Software Engineer", "Full Stack Developer", "Techie", "All-around Helpful Guy"],
   "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own.",
   "location" : "Providence, RI but will re-locate!"
 };
@@ -112,7 +112,7 @@ var experience =
       "title" : "Principal Software Engineer",
       "company" : "Fidelity Investments Smithfield, RI",
       "datesWorked" : "June 2001 - Sep 2014",
-      "role" : "Development lead, extended architect, all-around helpful guy.",
+      "role" : "Development lead, extended architect.",
       "accomplishments" : [
         {
           "description" : "This entry represents three development jobs I held at Fidelity each under a different sub-company in a different physical location.  I started in 2001 as an associate software engineer and earned three promotions along the way leaving as a principal software engineer, a role I held for five years.  Here are some highlights:"

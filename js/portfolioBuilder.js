@@ -198,10 +198,23 @@ function buildFooter() {
   }
 }
 
+function animations() {
+
+  var interval = 5e3; // 5 seconds
+  var index = 1;
+  var maxIndex = bio.role.length - 1;
+
+  setInterval(function() {
+    /* Flip the header role every so often. */
+    $("#headerRole").text(bio.role[index]);
+    index = (index == maxIndex) ? 0 : index + 1;
+  }, interval);
+}
+
 /* Build HTML using definitions in helper.js. */
 var picHTML = HTMLheaderPic.replace("%data%", bio.headShot);
 var nameHTML = HTMLheaderName.replace("%data%", bio.name);
-var roleHTML = HTMLheaderRole.replace("%data%", bio.role);
+var roleHTML = HTMLheaderRole.replace("%data%", bio.role[0]);
 var msgHTML = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var locationHTML = HTMLlocation.replace("%data%", bio.location);
 
@@ -218,3 +231,6 @@ buildFeaturedWork();
 buildEducation();
 buildExperience();
 buildFooter();
+
+/* Begin animation(s). */
+$( document ).ready(animations);

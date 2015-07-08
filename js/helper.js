@@ -2,7 +2,7 @@
 
 var HTMLheaderPic = '<img class="title-headshot img-responsive center-block img-circle" src="%data%" alt="Photo of Site Owner">';
 var HTMLheaderName = '<h1 class="title-super text-thin">%data%</h1>';
-var HTMLheaderRole = '<h3>%data%</h3>';
+var HTMLheaderRole = '<h3 id="headerRole">%data%</h3>';
 var HTMLwelcomeMsg = '<h4>%data%</h4>';
 var HTMLlocation = '<h4>%data%</h4>';
 var HTMLcategory = '<h3>%data%</h3>';
