@@ -16,8 +16,7 @@
 
   <body>
     <!-- Structure the hero header. -->
-    <section id="myNameAndRole" class="background-img text-center text-uppercase">
-    </section>
+    <section id="myNameAndRole" class="background-img text-center text-uppercase"></section>
     <!-- Structure about. -->
     <div class="background-white">
       <div class="container">
@@ -56,6 +55,8 @@
         <hr class="hr-dark">
       </div>
     </div>
+    <!-- A placeholder for featured work modals. -->
+    <div id="modals"></div>
     <!-- Structure education. -->
     <div class="background-light">
       <div id="education" class="container">
@@ -86,103 +87,7 @@
         </div>
   	  </div>
     </div>
-  <!-- Tango Me Modal -->
-  <div class="modal fade" id="TangoMe" tabindex="-1" role="dialog" aria-labelledby="Tango Me" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="Tango Me">Tango Me</h4>
-        </div>
-        <div class="modal-body">
-          Tango Me turns your mobile android device into a virtual dance partner using the accelerometer and other sensors.  Users are able to record themselves dancing and share via social media.  Solely responsible for concept, design and implementation.  On GooglePlay in Alpha, currently developing a release strategy.  Tango me was coded in Java using the Android SDK in Android Studio.  Source code is under Git version control.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Word Fade Modal -->
-  <div class="modal fade" id="WordFade" tabindex="-1" role="dialog" aria-labelledby="Word Fade" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="Word Fade">Word Fade</h4>
-        </div>
-        <div class="modal-body">
-          Word Fade is a Scrabble like word game with single and two-player modes able to be played synchronously or asynchronously via the cloud.  Solely responsible for design and implementation.  On GooglePlay in Alpha.  Word Fade was coded in Java using the Android SDK in Android Studio.  Source code is under Git version control.  Data for the two-player version of the game is stored in the cloud using Parse Cloud Storage.  Messaging between players makes use of Google Cloud Messaging.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Olive Modal -->
-  <div class="modal fade" id="Olive" tabindex="-1" role="dialog" aria-labelledby="Olive" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="Olive">Olive</h4>
-        </div>
-        <div class="modal-body">
-          Olive is a 3D game engine that consumes vertex meshes, applies shaders and implements a camera users may manipulate to view the world.  Solely responsible for design and implementation, still under development.  Olive is being developed in C++ with Git used for source code version control.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- My Portfolio Modal -->
-  <div class="modal fade" id="This" tabindex="-1" role="dialog" aria-labelledby="My Portfolio" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="myPortfolio">My Portfolio Site</h4>
-        </div>
-        <div class="modal-body">
-          I developed this webpage from scratch using HTML(5), CSS(3), jQuery, JavaScript and the Bootstrap Framework.  I used Git for code version control.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Property Ladder Modal -->
-  <div class="modal fade" id="PropertyLadder" tabindex="-1" role="dialog" aria-labelledby="Property Ladder" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="propertyLadder">Property Ladder</h4>
-        </div>
-        <div class="modal-body">
-          Property Ladder is a web based application that connects real estate buyers, sellers and agents particularly interested in residential architecture and historical preservation.  Implemented a normalized relational database indexed and clustered to support large search queries as well as targeted updates and created all the application specific DML SQL.  Solely responsible for concept, design and implementation.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- HTTP Web Server Modal -->
-  <div class="modal fade" id="BasicHTTPWebServer" tabindex="-1" role="dialog" aria-labelledby="HTTP Web Server" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="HTTPWebServer">Basic HTTP Web Server</h4>
-        </div>
-        <div class="modal-body">
-          Implemented a basic HTTP web server in Java without the use of any third party libraries.  The web server is able to handle up to 50 requests concurrently using threading.  The web server serves both static resources and servlets.  Servlet classes are loaded and executed on the fly.  The design is based on the Apache Web Server.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Finally introduce the build script. -->
-  <script src="js/portfolioBuilder.js"></script>
+    <!-- Finally introduce the build script. -->
+    <script src="js/portfolioBuilder.js"></script>
   </body>
 </html>

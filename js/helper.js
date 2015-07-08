@@ -22,3 +22,4 @@ var HTMLdatesWorked = '<h4>%data%</h4>';
 var HTMLrole = '<h4>%data%</h4>';
 var HTMLaccomplishment = '<p>%data%</p>';
 var HTMLfooterIcon = '<a href=%dataLink%><img class="img-responsive pull-right icon-padded" src=%dataSrc% alt=%dataAlt%></a>';
+var HTMLmodal = '<div class="modal fade" id=%dataID% tabindex="-1" role="dialog" aria-labelledby=%dataLabel% aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">%dataModalTitle%</h4></div><div class="modal-body">%dataModalBody%</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>';

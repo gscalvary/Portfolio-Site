@@ -402,6 +402,9 @@ function buildFeaturedWork() {
         $("#myWork-" + k).append(workSubTitleHTML);
         $("#myWork-" + k).append(workDateHTML);
         $("#myWork-" + k).append(workLinkHTML);
+        /* Build a modal for the project. */
+        var workModalHTML = HTMLmodal.replace("%dataID%", id).replace("%dataLabel%", featuredWork.projects[k].name).replace("%dataModalTitle%", featuredWork.projects[k].name).replace("%dataModalBody%", featuredWork.projects[k].longDescription);
+        $("#modals").append(workModalHTML);
       }
     }
   }
