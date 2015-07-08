@@ -141,7 +141,6 @@ var featuredWork =
   "projects" : [
     {
       "name" : "This!",
-      "id" : "myPortfolio",
       "date" : "Summer 2015",
       "description" : "A Portfolio Site",
       "image" : "images/PortfolioSite.jpg",
@@ -151,7 +150,6 @@ var featuredWork =
     },
     {
       "name" : "Basic HTTP Web Server",
-      "id" : "basicHTTPWebServer",
       "date" : "Summer 2015",
       "description" : "A Multi-threaded Web Server",
       "image" : "images/HTTPWebServer.jpg",
@@ -161,7 +159,6 @@ var featuredWork =
     },
     {
       "name" : "Tango Me",
-      "id" : "tangoMe",
       "date" : "Spring 2015",
       "description" : "An Exercise Game for Android",
       "image" : "images/TangoMe.jpg",
@@ -171,7 +168,6 @@ var featuredWork =
     },
     {
       "name" : "Word Fade",
-      "id" : "wordFade",
       "date" : "Spring 2015",
       "description" : "A Word Game for Android",
       "image" : "images/WordFade.jpg",
@@ -181,7 +177,6 @@ var featuredWork =
     },
     {
       "name" : "Olive",
-      "id" : "olive",
       "date" : "Fall 2014",
       "description" : "A 3D Game Engine",
       "image" : "images/Olive.jpg",
@@ -191,7 +186,6 @@ var featuredWork =
     },
     {
       "name" : "Property Ladder",
-      "id" : "propertyLadder",
       "date" : "Summer 2013",
       "description" : "A Relational Database",
       "image" : "images/PropertyLadder.jpg",
@@ -219,7 +213,9 @@ function setSkills(index) {
   }
 }
 
-function buildCategories(howMany) {
+function buildCategories() {
+
+  var howMany = skills.categories.length;
 
   for (var i = 0; i < howMany; i++) {
     var div = document.createElement("div");
@@ -238,7 +234,9 @@ function buildCategories(howMany) {
   }
 }
 
-function buildEducation(howMany) {
+function buildEducation() {
+
+  var howMany = education.schools.length;
 
   for (var i = 0; i < howMany; i++) {
     /* Build the rows. */
@@ -288,9 +286,9 @@ function buildEducation(howMany) {
   }
 }
 
-function buildExperience(howMany) {
+function buildExperience() {
 
-  for (var i = 0; i < howMany; i++) {
+  for (var i = 0; i < experience.jobs.length; i++) {
     /* Build the rows. */
     var title = document.createElement("div");
     title.className = "row";
@@ -350,9 +348,9 @@ function buildExperience(howMany) {
   }
 }
 
-function buildFeaturedWork(howMany) {
+function buildFeaturedWork() {
 
-  var numRows = Math.ceil(howMany/2);
+  var numRows = Math.ceil(featuredWork.projects.length/2);
 
   for(var i = 0; i < numRows; i++) {
     /* Build the rows. */
@@ -370,7 +368,10 @@ function buildFeaturedWork(howMany) {
       $("#works-" + i).append(work);
       /* Add the data. */
       if(k < featuredWork.projects.length) {
-        var workImageHTML = HTMLWorkImage.replace("%dataSrc%", featuredWork.projects[k].image).replace("%dataAlt%", featuredWork.projects[k].imageAlt).replace("%dataTarget%", "#" + featuredWork.projects[k].id);
+        /* Remove spaces from the project name to form a proper modal data target id. */
+        var id = featuredWork.projects[k].name.replace(/\s|\!+/g, '');
+        console.log(id);
+        var workImageHTML = HTMLWorkImage.replace("%dataSrc%", featuredWork.projects[k].image).replace("%dataAlt%", featuredWork.projects[k].imageAlt).replace("%dataTarget%", "#" + id);
         var workTitleHTML = HTMLWorkTitle.replace("%data%", featuredWork.projects[k].name);
         var workSubTitleHTML = HTMLWorkSubTitle.replace("%data%", featuredWork.projects[k].description);
         var workDateHTML = HTMLWorkDate.replace("%data%", featuredWork.projects[k].date);
@@ -391,14 +392,16 @@ var nameHTML = HTMLheaderName.replace("%data%", bio.name);
 var roleHTML = HTMLheaderRole.replace("%data%", bio.role);
 var msgHTML = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var locationHTML = HTMLlocation.replace("%data%", bio.location);
+
 /* Use jQuery to update the DOM with the HTML built above. */
 $("#myNameAndRole").prepend(nameHTML);
 $("#myNameAndRole").append(roleHTML);
 $("#myPicture").append(picHTML);
 $("#about").append(msgHTML);
 $("#myLocation").append(locationHTML);
+
 /* Dynamically modify the DOM for personal information with 1 to many entries. */
-buildCategories(skills.categories.length);
-buildFeaturedWork(featuredWork.projects.length);
-buildEducation(education.schools.length);
-buildExperience(experience.jobs.length);
+buildCategories();
+buildFeaturedWork();
+buildEducation();
+buildExperience();
