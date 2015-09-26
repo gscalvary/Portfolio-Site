@@ -6,7 +6,7 @@ var bio =
   "name" : "Christopher Oliver",
   "role" : ["Software Engineer", "Full Stack Developer", "Techie", "All-around Helpful Guy"],
   "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own.",
-  "location" : "Providence, RI but will re-locate!"
+  "location" : "Austin, TX"
 };
 
 var skills =
@@ -16,21 +16,22 @@ var skills =
       "name" : "Languages",
       "entries" : [
         { "name" : "Java"},
-        { "name" : "C++"},
-        { "name" : "C"},
-        { "name" : "SQL"},
-        { "name" : "COBOL"},
-        { "name" : "Python"},
-        { "name" : "Lua"},
-        { "name" : "Unix Shell"},
-        { "name" : "JCL"},
-        { "name" : "Racket"},
-        { "name" : "GLSL"},
         { "name" : "HTML(5)"},
         { "name" : "CSS(3)"},
         { "name" : "JSON"},
         { "name" : "JavaScript"},
-        { "name" : "jQuery"}
+        { "name" : "jQuery"},
+        { "name" : "Groovy"},
+        { "name" : "Python"},
+        { "name" : "Lua"},
+        { "name" : "Unix Shell"},
+        { "name" : "C++"},
+        { "name" : "C"},
+        { "name" : "SQL"},
+        { "name" : "GLSL"},
+        { "name" : "COBOL"},
+        { "name" : "JCL"},
+        { "name" : "Racket"}
       ]
     },
     {
@@ -51,6 +52,7 @@ var skills =
         { "name" : "IntelliJ"},
         { "name" : "Atom"},
         { "name" : "Ant"},
+        { "name" : "Gradle"},
         { "name" : "Eclipse RDz"},
         { "name" : "Xcode"},
         { "name" : "MS Visual Studio"},
@@ -67,8 +69,10 @@ var skills =
     {
       "name" : "Technologies",
       "entries" : [
+        { "name" : "Spring MVC"},
         { "name" : "Android SDK"},
         { "name" : "Bootstrap"},
+        { "name" : "Git"},
         { "name" : "OpenGL"},
         { "name" : "Google Cloud Messaging"},
         { "name" : "Parse Cloud Storage"},
@@ -78,7 +82,6 @@ var skills =
         { "name" : "Virtual Box"},
         { "name" : "GLFW"},
         { "name" : "zOS"},
-        { "name" : "Git"},
         { "name" : "Subversion"},
         { "name" : "Box2D"},
         { "name" : "CBMC"}
@@ -109,8 +112,19 @@ var experience =
 {
   "jobs" : [
     {
+      "title" : "Java Software Engineer",
+      "company" : "Blizzard Entertainment - Austin, TX",
+      "datesWorked" : "August 2015 - present",
+      "role" : "Full Stack Developer",
+      "accomplishments" : [
+        {
+          "description" : "Working on a complete re-design of Blizzard's game support portal: us.battle.net.  Using Spring MVC, Java, Javascript, jQuery, Handlebars templating, Sass styling, the Spock testing framework and an agile development methodology.  Repsonsible for various front-end and back-end feature development as well as current site production support."
+        }
+      ]
+    },
+    {
       "title" : "Principal Software Engineer",
-      "company" : "Fidelity Investments Smithfield, RI",
+      "company" : "Fidelity Investments - Smithfield, RI",
       "datesWorked" : "June 2001 - Sep 2014",
       "role" : "Development lead, extended architect.",
       "accomplishments" : [

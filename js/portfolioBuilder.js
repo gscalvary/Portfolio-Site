@@ -200,7 +200,7 @@ function buildFooter() {
 
 function animations() {
 
-  var interval = 5e3; // 5 seconds
+  var interval = 3e3; // 3 seconds
   var index = 1;
   var maxIndex = bio.role.length - 1;
 
