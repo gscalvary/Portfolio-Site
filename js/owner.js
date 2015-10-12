@@ -17,10 +17,11 @@ var skills =
       "entries" : [
         { "name" : "Java"},
         { "name" : "HTML(5)"},
-        { "name" : "CSS(3)"},
-        { "name" : "JSON"},
         { "name" : "JavaScript"},
         { "name" : "jQuery"},
+        { "name" : "CSS(3)"},
+        { "name" : "Sass"},
+        { "name" : "JSON"},
         { "name" : "Groovy"},
         { "name" : "Python"},
         { "name" : "Lua"},
@@ -28,10 +29,8 @@ var skills =
         { "name" : "C++"},
         { "name" : "C"},
         { "name" : "SQL"},
-        { "name" : "GLSL"},
         { "name" : "COBOL"},
         { "name" : "JCL"},
-        { "name" : "Racket"}
       ]
     },
     {

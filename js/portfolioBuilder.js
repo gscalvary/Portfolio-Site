@@ -15,6 +15,10 @@ function setSkills(index) {
   }
 }
 
+function buildHeader() {
+  $('title').text(bio.name + "'s Portfolio");
+}
+
 function buildCategories() {
 
   var howMany = skills.categories.length;
@@ -226,6 +230,7 @@ $("#about").append(msgHTML);
 $("#myLocation").append(locationHTML);
 
 /* Dynamically modify the DOM for personal information with 1 to many entries. */
+buildHeader();
 buildCategories();
 buildFeaturedWork();
 buildEducation();
