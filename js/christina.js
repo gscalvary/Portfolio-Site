@@ -2,11 +2,11 @@
 
 var bio =
 {
-  "headShot" : "images/Chris.jpg",
-  "name" : "Christopher Oliver",
-  "role" : ["Software Engineer", "Full Stack Developer", "Techie", "All-around Helpful Guy"],
-  "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own.",
-  "location" : "Austin, TX"
+  "headShot" : "images/Christina.jpg",
+  "name" : "Christina Oliver",
+  "role" : ["Experienced Project Manager", "Communications Specialist", "Writer"],
+  "welcomeMessage" : "An experienced communications professional with technical know-how and sought-after project management, consulting and relationship management skills.  Highly organized, focused, and efficient in fast-paced multitasking environments; able to prioritize effectively to accomplish objectives with ingenuity and passion.",
+  "location" : "Planet Earth"
 };
 
 var skills =
@@ -93,16 +93,14 @@ var education =
 {
   "schools" : [
     {
-      "degree" : "M.S. Computer Science",
+      "degree" : "Certificate in Technical Writing",
       "name" : "Northeastern Univ. Boston, MA",
-      "datesAttended" : "Sep 2012 - May 2015",
-      "aboutDegree" : "Achieved a 3.83 GPA while studying: Artificial Intelligence, Mobile Application Development, Database Management Systems, Algorithms, Computer Systems, Program Design, Game Engine Design and Engineering Software for Reliablity."
+      "aboutDegree" : "GPA: 3.6"
     },
     {
-      "degree" : "B.S. Finance",
-      "name" : "URI Kingston, RI",
-      "datesAttended" : "Sep 1993 - Aug 1996",
-      "aboutDegree" : "Achieved a 3.65 GPA while a student athlete on the URI Crew Team.  Go Rams!"
+      "degree" : "A.A. Liberal Studies",
+      "name" : "Dean College Franklin, MA",
+      "aboutDegree" : "GPA: 3.6"
     }
   ]
 }
@@ -111,40 +109,88 @@ var experience =
 {
   "jobs" : [
     {
-      "title" : "Java Software Engineer",
-      "company" : "Blizzard Entertainment - Austin, TX",
-      "datesWorked" : "August 2015 - present",
-      "role" : "Full Stack Developer",
+      "title" : "Senior Project Manager, Communications",
+      "company" : "Fidelity Institutional Asset Management - Smithfield, RI",
+      "datesWorked" : "September 2006 - present",
+      "role" : "",
       "accomplishments" : [
         {
-          "description" : "Working on a complete re-design of Blizzard's game support portal: us.battle.net.  Using Spring MVC, Java, Javascript, jQuery, Handlebars templating, Sass styling, the Spock testing framework and an agile development methodology.  Repsonsible for various front-end and back-end feature development as well as current site production support."
+          "description" : "Manage multiple communications’ projects using various mediums including cloud-based online presentations (e.g., Brainshark), online social media, intranet, and print media (e.g., flyers, posters, memos, letters)."
+        },
+        {
+          "description" : "Envisioned, built, promoted, and implemented a social media page for our department of approximately 400 associates;"
+        },
+        {
+          "description" : "Strategized, launched, and currently lead OSG FFAS CS Community Building, an executive-level cross-regional initiative aimed at cross-educating Client Services departments and teams;"
+        },
+        {
+          "description" : "Visualized, coordinated, and guided the creation and implementation of a Learning & Development game to encourage use of the Client Services Ribbit page, using Adobe Captivate;"
+        },
+        {
+          "description" : "Draft and distribute communications, edit videos, and assist with organizing and logistics for client-focused educational forums, with an estimated 100+ cross-regional associates in attendance; the forums have encompassed Investment Professional visits, public policy presentations , and high-level Fidelity initiatives;"
+        },
+        {
+          "description" : "Guide senior management on communications best practices that drive internal business objectives and enhance associate engagement;"
+        },
+        {
+          "description" : "Draft, edit, and distribute executive-level memos, videos, and voice memos;"
+        },
+        {
+          "description" : "Strategize and execute large-scale external communication plans for regulatory changes, policy updates, service recoveries, as well as fund events (e.g., launches, name changes, restructures, mergers);"
+        },
+        {
+          "description" : "Create and distribute surveys for internal audiences via Survey Monkey and InsightExpress; gather and share results with key stakeholders."
         }
       ]
     },
     {
-      "title" : "Principal Software Engineer",
-      "company" : "Fidelity Investments - Smithfield, RI",
-      "datesWorked" : "June 2001 - Sep 2014",
-      "role" : "Development lead, extended architect.",
+      "title" : "Senior Technical Consultant",
+      "company" : "Fidelity Investments - Boston, MA",
+      "datesWorked" : "September 2003 - September 2006",
+      "role" : "",
       "accomplishments" : [
         {
-          "description" : "This entry represents three development jobs I held at Fidelity each under a different sub-company in a different physical location.  I started in 2001 as an associate software engineer and earned three promotions along the way leaving as a principal software engineer, a role I held for five years.  Here are some highlights:"
+          "description" : "Built and integrated custom Websites and electronic products to best support broker/dealer clients’ business models based on phone consultations and client feedback."
         },
         {
-          "description" : "Modernized a large, mission critical transfer agent system by porting it’s back-end web services to process against a relational database.  These services support all customer data view and update operations for advisor.fidelity.com and run concurrently with long-running batch processes that also update the database.  Lead developer for both on-shore and off-shore development teams."
+          "description" : "Led meetings and presentations with clients, relationship managers, and customer service managers to discuss and train on new electronic products;"
         },
         {
-          "description" : "Built a multi-threaded COBOL application reading and updating a multi-million row DB2 database using large, but performant, SQL cursors of my design.  Worked with DBAs to optimize DB table clustering and indexing to support performance, eliminate deadlocks and handle restarts in the event of mid-process failure."
+          "description" : "Worked with Implementation, Product Management, Training, Client Management, Support, and Technology groups to build and implement new electronic products;"
         },
         {
-          "description" : "Redesigned a single-threaded COBOL process responsible for processing very large data files from brokerage firms.  Delivered a multi-threaded COBOL process yielding a 700% performance increase over the former system.  The technology allowed Fidelity to process industry record-breaking data volume over a single weekend; whereas other mutual fund companies required several weekends to process similar volume.  Led design, development, testing and implementation phases."
+          "description" : "Completed a course in Hypertext Markup Language (HTML) and a four-day course in Principle and Techniques of Project Management;"
         },
         {
-          "description" : "Responsible for new technology evaluation and prototyping.  Installed, configured and evaluated an IBM zOS virtual machine (mini-mainframe) running on a RedHat Linux host.  Evaluated IBM Eclipse RDz IDE for zOS, as an early user worked directly with IBM development teams, under a non-disclosure agreement, to enhance and stabilize their product."
-        },
-        {
-          "description" : "Participated in several 24/7 on-call rotations.  Performed code and system design reviews.  Mentored new programmers.  Traveled to India in 2012 and 2014 to train and mentor our off-shore software engineering teams."
+          "description" : "Established and led the “Activities Committee,” which coordinated holiday festivities and team outings."
         }
+      ]
+    },
+    {
+      "title" : "Senior Technical Analyst",
+      "company" : "Fidelity Investments - Boston, MA",
+      "datesWorked" : "June 2001 - September 2003",
+      "role" : "",
+      "accomplishments" :
+      [
+      ]
+    },
+    {
+      "title" : "Software Support Specialist",
+      "company" : "Fidelity Investments - Smithfield, RI",
+      "datesWorked" : "October 2000 - June 2001",
+      "role" : "",
+      "accomplishments" :
+      [
+      ]
+    },
+    {
+      "title" : "Operations Specialist",
+      "company" : "Fidelity Investments - Smithfield, RI",
+      "datesWorked" : "July 1998 - October 2000",
+      "role" : "",
+      "accomplishments" :
+      [
       ]
     }
   ]
@@ -220,14 +266,9 @@ var links =
 {
   "icons" : [
     {
-      "link" : "https://github.com/gscalvary",
-      "image" : "images/Octocat.jpg",
-      "imageDesc" : "View Christopher Oliver's code on GitHub"
-    },
-    {
-      "link" : "https://www.linkedin.com/pub/christopher-oliver/9/199/557",
+      "link" : "https://www.linkedin.com/profile/view?id=AAMAABPzMrIBjyRhGhxpWjY0pnNIbhNv92ABIxo&trk=hp-identity-name",
       "image" : "https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png",
-      "imageDesc" : "View Christopher Oliver's profile on LinkedIn"
+      "imageDesc" : "View Christina Oliver's profile on LinkedIn"
     }
   ]
 }
