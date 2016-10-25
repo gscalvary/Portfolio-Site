@@ -7,7 +7,7 @@ var HTMLwelcomeMsg = '<h4>%data%</h4>';
 var HTMLlocation = '<h4>%data%</h4>';
 var HTMLcategory = '<h3>%data%</h3>';
 var HTMLSkill = '<h4>%data%</h4>';
-var HTMLWorkImage = '<img class="img-responsive img-border" src="%dataSrc%" alt="%dataAlt" data-toggle="modal" data-target="%dataTarget%">';
+var HTMLWorkImage = '<img class="img-responsive" src="%dataSrc%" alt="%dataAlt" data-toggle="modal" data-target="%dataTarget%">';
 var HTMLWorkTitle = '<h3>%data%</h3>';
 var HTMLWorkSubTitle = '<h4>%data%</h4>';
 var HTMLWorkDate = '<h4>%data%</h4>';

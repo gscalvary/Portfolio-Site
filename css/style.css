@@ -9,8 +9,21 @@ section {
     overflow:auto;
 }
 
-.img-border {
-  border:2px solid #474747;
+#featured .img-responsive {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#featured .img-responsive:hover {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+#pictures .img-responsive {
+  border: solid 1px rgba(0, 0, 0, 0.25);
+}
+
+#pictures .img-responsive:hover {
+  border: solid 1px rgba(0, 0, 0, 0.75);
 }
 
 .container {
