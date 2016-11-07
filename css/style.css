@@ -12,18 +12,21 @@ section {
 #featured .img-responsive {
   border: 1px solid rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  transition: transform .4s;
 }
 
 #featured .img-responsive:hover {
   border: 1px solid rgba(0, 0, 0, 1);
+  transform: translateY(-.3rem);
 }
 
 #pictures .img-responsive {
   border: solid 1px rgba(0, 0, 0, 0.25);
+  transition: transform .4s;
 }
 
 #pictures .img-responsive:hover {
-  border: solid 1px rgba(0, 0, 0, 0.75);
+  transform: translateY(-.5rem);
 }
 
 .container {
@@ -67,7 +70,7 @@ section {
 }
 
 .text-thin {
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .title-super {
