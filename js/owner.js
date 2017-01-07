@@ -4,8 +4,8 @@ var bio =
 {
   "headShot" : "images/Chris.jpg",
   "name" : "Christopher Oliver",
-  "role" : ["Software Engineer", "Full Stack Developer", "Techie", "All-around Helpful Guy"],
-  "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over ten years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies on my own.",
+  "role" : ["Software Engineer", "Full Stack Developer", "Computer Scientist", "Techie"],
+  "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over fifteen years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies.",
   "location" : "Austin, TX"
 };
 
@@ -30,7 +30,7 @@ var skills =
         { "name" : "C"},
         { "name" : "SQL"},
         { "name" : "COBOL"},
-        { "name" : "JCL"},
+        { "name" : "JCL"}
       ]
     },
     {
