@@ -2,7 +2,7 @@
 Building a portfolio site using HTML(5), CSS(3), Bootstrap, jQuery and JavaScript.
 All data is stored in valid JSON formats.
 
--- To Do
+To Do
 a) Skills section:
   i)   the section background needs a new color.
   ii)  entries need to be re-organized and updated.
@@ -14,3 +14,4 @@ b) Featured Work section:
        Also need a visual cue that there is additional information available.
 c) Experience section:
   i)   break up the Fidelity entries into their individual jobs.
+d) Need a favicon!
