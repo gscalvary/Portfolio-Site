@@ -4,9 +4,7 @@ All data is stored in valid JSON formats.
 
 To Do
 a) Skills section:
-  i)   the section background needs a new color.
-  ii)  entries need to be re-organized and updated.
-  iii) need a new way to present this information - tabs!
+  i) add depth of knowledge to each skill.
 b) Featured Work section:
   i)   add the Blizzard Support Portal.
   ii)  how about Salesforce and Hivemind?
@@ -14,4 +12,3 @@ b) Featured Work section:
        Also need a visual cue that there is additional information available.
 c) Experience section:
   i)   break up the Fidelity entries into their individual jobs.
-d) Need a favicon!

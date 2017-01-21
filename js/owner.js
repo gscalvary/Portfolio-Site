@@ -21,70 +21,83 @@ var skills =
         { "name" : "jQuery"},
         { "name" : "CSS(3)"},
         { "name" : "Sass"},
+        { "name" : "SQL"},
+        { "name" : "Apex"},
+        { "name" : "Visualforce"},
+        { "name" : "SOQL"},
+        { "name" : "SOSL"},
         { "name" : "JSON"},
+        { "name" : "Unix Shell"},
         { "name" : "Groovy"},
+        { "name" : "C"},
         { "name" : "Python"},
         { "name" : "Lua"},
-        { "name" : "Unix Shell"},
         { "name" : "C++"},
-        { "name" : "C"},
-        { "name" : "SQL"},
         { "name" : "COBOL"},
         { "name" : "JCL"}
       ]
     },
     {
-      "name" : "Databases",
+      "name" : "Datastores",
       "entries" : [
         { "name" : "Couchbase"},
+        { "name" : "Solr"},
+        { "name" : "Salesforce"},
+        { "name" : "Oracle"},
+        { "name" : "PostgreSQL"},
         { "name" : "SQLite"},
         { "name" : "DB2"},
-        { "name" : "Oracle"},
-        { "name" : "Sybase"},
-        { "name" : "PostgreSQL"},
-        { "name" : "VSAM"}
+        { "name" : "VSAM"},
+        { "name" : "Sybase"}
       ]
     },
     {
       "name" : "Tools",
       "entries" : [
-        { "name" : "Android Studio"},
         { "name" : "IntelliJ"},
         { "name" : "Atom"},
-        { "name" : "Ant"},
+        { "name" : "Git"},
         { "name" : "Gradle"},
+        { "name" : "Maven"},
+        { "name" : "Android Studio"},
+        { "name" : "pgAdmin3"},
+        { "name" : "Ant"},
         { "name" : "Eclipse RDz"},
         { "name" : "Xcode"},
         { "name" : "MS Visual Studio"},
         { "name" : "ISPF"},
-        { "name" : "Toad"},
         { "name" : "Rapid SQL"},
-        { "name" : "RTC"},
+        { "name" : "Subversion"},
         { "name" : "Endevor"},
-        { "name" : "pgAdmin3"},
         { "name" : "Maya"},
         { "name" : "DrRacket"}
       ]
     },
     {
-      "name" : "Technologies",
+      "name" : "Frameworks",
       "entries" : [
         { "name" : "Spring MVC"},
-        { "name" : "Android SDK"},
+        { "name" : "Freemarker"},
+        { "name" : "Handlebars"},
         { "name" : "Bootstrap"},
-        { "name" : "Git"},
+        { "name" : "RabbitMQ"},
+        { "name" : "Android SDK"},
         { "name" : "OpenGL"},
         { "name" : "Google Cloud Messaging"},
-        { "name" : "Parse Cloud Storage"},
-        { "name" : "OSX"},
-        { "name" : "Windows"},
-        { "name" : "Linux"},
         { "name" : "Virtual Box"},
         { "name" : "GLFW"},
-        { "name" : "zOS"},
-        { "name" : "Subversion"},
         { "name" : "Box2D"},
-        { "name" : "CBMC"}
+        { "name" : "CBMC"},
+        { "name" : "CICS"}
+      ]
+    },
+    {
+      "name" : "OSs",
+      "entries" : [
+        { "name" : "Windows"},
+        { "name" : "Linux"},
+        { "name" : "OSX"},
+        { "name" : "zOS"}
       ]
     }
   ]
