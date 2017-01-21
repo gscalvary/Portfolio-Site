@@ -6,7 +6,7 @@ To Do
 a) Skills section:
   i)   the section background needs a new color.
   ii)  entries need to be re-organized and updated.
-  iii) need a new way to present this information.
+  iii) need a new way to present this information - tabs!
 b) Featured Work section:
   i)   add the Blizzard Support Portal.
   ii)  how about Salesforce and Hivemind?

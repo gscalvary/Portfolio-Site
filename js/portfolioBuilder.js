@@ -1,5 +1,5 @@
 /* Functions used to dynamically allocate divs for personal data that has from
-   1 to many entries. */
+   one to many entries. */
 
 function setSkillHeading(index) {
 
@@ -27,7 +27,6 @@ function buildCategories() {
     var div = document.createElement("div");
     switch (howMany) {
       case 4:
-        var div = document.createElement("div");
         div.className = "col-md-3";
         div.id = "category-" + i;
         $("#categories").append(div);
