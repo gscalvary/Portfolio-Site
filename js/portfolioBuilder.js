@@ -7,12 +7,44 @@ function setSkillHeading(index) {
   $("#category-" + index).append(categoryHTML);
 }
 
-function setSkills(index) {
+function setSkills(i, pane) {
 
-  for (entry in skills.categories[index].entries) {
-    var skillHTML = HTMLSkill.replace("%data%", skills.categories[index].entries[entry].name);
-    $("#category-" + index).append(skillHTML);
+  for (entry in skills.categories[i].entries) {
+    var skillHTML = HTMLSkill.replace("%data%", skills.categories[i].entries[entry].name);
+    pane.append(skillHTML);
   }
+}
+
+function buildSkillTab(i) {
+
+  var name = skills.categories[i].name;
+  var listElementHTML = HTMLListElement
+    .replace("%dataID%", name)
+    .replace("%dataName%", name)
+    .replace("%dataTitle%", name);
+
+  $("#categories").append(listElementHTML);
+
+  if (i === 0) {
+    var id = "#" + name + "-li";
+    $(id).addClass("active");
+  }
+}
+
+function buildSkillTabPane(i) {
+
+  var name = skills.categories[i].name;
+  var listElementPaneHTML = HTMLListElementPane
+    .replace("%dataName%", name);
+
+  $("#category-panes").append(listElementPaneHTML);
+
+  var pane = $("#" + name + "-pane")
+  if (i === 0) {
+    pane.addClass("in active");
+  }
+
+  setSkills(i, pane);
 }
 
 function buildHeader() {
@@ -20,22 +52,11 @@ function buildHeader() {
 }
 
 function buildCategories() {
-
   var howMany = skills.categories.length;
 
   for (var i = 0; i < howMany; i++) {
-    var div = document.createElement("div");
-    switch (howMany) {
-      case 4:
-        div.className = "col-md-3";
-        div.id = "category-" + i;
-        $("#categories").append(div);
-        setSkillHeading(i);
-        setSkills(i);
-        break;
-      default:
-        break;
-    }
+    buildSkillTab(i);
+    buildSkillTabPane(i);
   }
 }
 
