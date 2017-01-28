@@ -1,5 +1,5 @@
 body {
-  color: #323232;
+  color: black;
   font-family: 'Lato', sans-serif;
 }
 
@@ -46,17 +46,17 @@ section {
   color: white;
 }
 
+.background-footer {
+  background: black;
+  color: white;
+}
+
 .background-dark {
-  background: #232323;
+  background: black;
   color: white;
 }
 
 .background-light {
-  background: #333;
-  color: white;
-}
-
-.background-white {
   background: white;
 }
 

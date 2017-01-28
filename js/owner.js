@@ -131,33 +131,87 @@ var experience =
       "role" : "Full Stack Developer",
       "accomplishments" : [
         {
-          "description" : "Working on a complete re-design of Blizzard's game support portal: us.battle.net/support.  Using Spring MVC, Java, Javascript, jQuery, Handlebars templating, Sass styling, the Spock testing framework and an agile development methodology.  Repsonsible for various front-end and back-end feature development as well as current site production support."
+          "description" : "Worked on a complete re-write of Blizzard's game support portal: us.battle.net/support using Spring MVC, Java, Javascript, jQuery, Handlebars and Freemarker templating, Bootstrap, Sass, the Spock testing framework and the Scrum agile development methodology.  Developed various front and back-end features including integration into the World of Warcraft game client, a faceted search UI implementation and the site's back-end integration with Solr search.  This site is used worldwide, localized in over a dozen languages, and supported on many different browsers and form factors all supported by the small team on which I work."
+        },
+        {
+          "description" : "Helped build a highly customized Knowledge Centered Support (KCS) system for storing and curating Blizzard support articles housed within Salesforce.  Integrated the new KCS system with the Support Portal and all Blizzard game sites by constructing a system, using RabbitMQ and various REST calls, to publish Salesforce curated articles to the company's Solr search cores."
+        },
+        {
+          "description" : "Working on several new self-service options that will automate solutions to common problems that customers must now contact a customer support representative to resolve.  This work entails both front and back-end work as well as colloboration with other Blizzard system teams to develop new APIs."
+        },
+        {
+          "description" : "Particpate in a 24/7 production support rotation.  Perform code reviews, system analysis for upcoming initiatives as well as write system documentation."
+        }
+      ]
+    },
+    {
+      "title" : "Full-time Graduate Student",
+      "company" : "Northeastern University - Boston, MA",
+      "datesWorked" : "Sep 2014 - May 2015",
+      "role" : "MS candidate, Computer Science.",
+      "accomplishments" : [
+        {
+          "description" : "After having spent the prior two years working full-time as the development lead on a large software project while going to graduate school part-time I took a year break to finish my Masters full-time.  I first planned for this hiatus in 2011 as a much needed opportunity to update my technical skills and then to secure a development job using those new skills."
         }
       ]
     },
     {
       "title" : "Principal Software Engineer",
-      "company" : "Fidelity Investments - Smithfield, RI",
-      "datesWorked" : "June 2001 - Sep 2014",
+      "company" : "Fidelity Investments, FFAS - Smithfield, RI",
+      "datesWorked" : "Oct 2006 - Sep 2014",
       "role" : "Development lead, extended architect.",
       "accomplishments" : [
-        {
-          "description" : "This entry represents three development jobs I held at Fidelity each under a different sub-company in a different physical location.  I started in 2001 as an associate software engineer and earned three promotions along the way leaving as a principal software engineer, a role I held for five years.  Here are some highlights:"
-        },
         {
           "description" : "Modernized a large, mission critical transfer agent system by porting it’s back-end web services to process against a relational database.  These services support all customer data view and update operations for advisor.fidelity.com and run concurrently with long-running batch processes that also update the database.  Lead developer for both on-shore and off-shore development teams."
         },
         {
-          "description" : "Built a multi-threaded COBOL application reading and updating a multi-million row DB2 database using large, but performant, SQL cursors of my design.  Worked with DBAs to optimize DB table clustering and indexing to support performance, eliminate deadlocks and handle restarts in the event of mid-process failure."
+          "description" : "Rewrote the core batch and on-line software responsible for the systematic buying and selling of Fidelity mutual funds, including minimum retirement distributions from 401k accounts, directly from customer bank accounts.  Delivered several user interface tweaks and a complete batch redesign for performance improvements.  Led design, development, testing and implementation phases."
+        },
+        {
+          "description" : "Built a multi-threaded COBOL application for periodic dividend processing that reads and updates a multi-million row DB2 database using large, but performant, SQL cursors of my design.  Worked with DBAs to optimize DB table clustering and indexing to support performance, eliminate deadlocks and handle restarts in the event of mid-process failure."
         },
         {
           "description" : "Redesigned a single-threaded COBOL process responsible for processing very large data files from brokerage firms.  Delivered a multi-threaded COBOL process yielding a 700% performance increase over the former system.  The technology allowed Fidelity to process industry record-breaking data volume over a single weekend; whereas other mutual fund companies required several weekends to process similar volume.  Led design, development, testing and implementation phases."
         },
         {
-          "description" : "Responsible for new technology evaluation and prototyping.  Installed, configured and evaluated an IBM zOS virtual machine (mini-mainframe) running on a RedHat Linux host.  Evaluated IBM Eclipse RDz IDE for zOS, as an early user worked directly with IBM development teams, under a non-disclosure agreement, to enhance and stabilize their product."
+          "description" : "Responsible for new technology evaluation and prototyping.  Installed, configured and evaluated an IBM zOS virtual machine (container) running on a RedHat Linux host.  Evaluated IBM Eclipse RDz IDE for zOS, as an early user worked directly with IBM development teams, under a non-disclosure agreement, to enhance and stabilize their product."
         },
         {
           "description" : "Participated in several 24/7 on-call rotations.  Performed code and system design reviews.  Mentored new programmers.  Traveled to India in 2012 and 2014 to train and mentor our off-shore software engineering teams."
+        }
+      ]
+    },
+    {
+      "title" : "Senior Software Engineer",
+      "company" : "Fidelity Investments, FBCT - Boston, MA",
+      "datesWorked" : "Oct 2005 - Oct 2006",
+      "role" : "Mainframe developer.",
+      "accomplishments" : [
+        {
+          "description" : "Worked on the back-end of Fidelity's brokerage system primarily triaging, analyzing and fixing issues caused by software problems.  Responsible for monthly software releases as well as the creation and reporting of our team's monthly metrics."
+        },
+        {
+          "description" : "Provided 24/7 support."
+        }
+      ]
+    },
+    {
+      "title" : "Senior Software Engineer",
+      "company" : "Fidelity Investments, FPCMS - Boston, MA",
+      "datesWorked" : "July 2001 - Oct 2005",
+      "role" : "Mainframe developer.",
+      "accomplishments" : [
+        {
+          "description" : "This was my first development job.  I started in 2001 as an associate software engineer and earned two promotions in the first three years leaving as a senior software engineer."
+        },
+        {
+          "description" : "Primarily worked on the back-end of the mission critical trade delivery system that supported Fidelity's trading of the securities underlying their mutual funds.  Also worked on the back-end of the securities lending system that allowed Fidelity to lend the securities underlying their mutual funds to other institutions for profit.  By the time I left this role I was the technical subject matter expert of the trade delivery system and was training new engineers on its function and implementation."
+        },
+        {
+          "description" : "Enhanced all of the custody systems supported by my team to interface with a new custody bank, Northern Trust.  Delivered technical documentation, new VPNs (NDM line), new transmissions and 500+ program, scheduling and JCL changes.  Led analysis, development, testing and implementation phases; primary technical liason for Northern Trust counterparts."
+        },
+        {
+          "description" : "Participated in a 24/7 on-call rotation."
         }
       ]
     }
