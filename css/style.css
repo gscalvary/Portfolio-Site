@@ -77,6 +77,10 @@ section {
 
 .title-super {
   font-size: 52px;
+
+  @media (max-width : 480px) {
+    font-size: 34px;
+  }
 }
 
 .title-headshot {
@@ -97,4 +101,10 @@ section {
 
 .skill {
   margin-left: 16px;
+}
+
+@media (max-width : 480px) {
+  .title-super {
+    font-size: 34px;
+  }
 }
