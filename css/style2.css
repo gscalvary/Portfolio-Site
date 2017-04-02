@@ -1,0 +1,154 @@
+/* style2.css */
+
+
+body {
+ background-color:#D3D3D3;
+ width: 100%;
+}
+
+.hero {
+
+background: linear-gradient(to bottom, rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url("multimediaborder.jpeg");
+background: -moz-linear-gradient(top, rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url("multimediaborder.jpeg");
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.25),rgba(0,0,0,0.75)),url("multimediaborder.jpeg");
+background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 18px 0px 18px 0px;
+  text-align: center;
+  line-height: 90%;
+
+}
+
+
+h3 {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    text-align: center;
+}
+
+
+/* tables general*/
+
+thead {
+    font-family:  Lucida Sans Unicode, Lucida Grande, sans-serif;
+    text-align: center;
+    font-size: 1.5em;;
+}
+
+td {
+  font-family:  Lucida Sans Unicode, Lucida Grande, sans-serif;
+
+}
+
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    opacity: 0.75;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:  Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+
+                  /* mouse over link */
+li a:hover {
+    color: white;
+    opacity: 1.0;
+}
+
+                  /* selected link */
+li a.selected {
+    color: white;
+opacity: 1.0;
+text-decoration: underline;
+}
+
+
+/* home */
+
+.textwrap {
+float: right;
+margin: 10px;
+}
+
+
+table#tablehome {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+  }
+
+table#tablecontact {
+  margin: 0 auto;
+  }
+
+
+table#tableportfolio {
+margin: 0 auto;
+text-align: center;
+  }
+
+/* featured work */
+
+
+video {
+  width: 50% !important;
+  height: auto !important;
+  margin: 0 auto;
+  display: block;
+}
+
+iframe {
+    display: block;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border: 0;
+}
+
+/* resume */
+
+.embed { width: 800px; margin-left: auto; margin-right: auto; }
+
+
+/* contact */
+
+#contact button[type="submit"]{
+	cursor:pointer;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0;
+    padding:10px;
+	font-size:15px;
+}
+
+
+.input-element{
+font-size: 1.5em;;
+width: 500px;
+}
