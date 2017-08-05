@@ -81,6 +81,7 @@ var skills =
         { "name" : "Handlebars"},
         { "name" : "Bootstrap"},
         { "name" : "RabbitMQ"},
+        { "name" : "Unsemantic"},
         { "name" : "Android SDK"},
         { "name" : "OpenGL"},
         { "name" : "Google Cloud Messaging"},
