@@ -1,3 +1,6 @@
+/* jQuery selectors */
+var $navItems = $('.nav-item');
+
 /* Functions used to dynamically allocate divs for personal data that has from
    one to many entries. */
 
@@ -257,5 +260,13 @@ buildEducation();
 buildExperience();
 buildFooter();
 
+/* Event handlers. */
+$navItems.on('click', function() {
+  $navItems.removeClass('active');
+  this.className += " active";
+});
+
 /* Begin animation(s). */
-$( document ).ready(animations);
+$( document ).ready(function() {
+  animations();
+});
