@@ -59,7 +59,6 @@ var skills =
         { "name" : "Git"},
         { "name" : "Gradle"},
         { "name" : "Maven"},
-        { "name" : "Docker"},
         { "name" : "Android Studio"},
         { "name" : "pgAdmin3"},
         { "name" : "Ant"},
@@ -77,6 +76,7 @@ var skills =
     {
       "name" : "Frameworks",
       "entries" : [
+        { "name" : "Docker"},
         { "name" : "Spring MVC"},
         { "name" : "Freemarker"},
         { "name" : "Handlebars"},
