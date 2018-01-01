@@ -1,5 +1,10 @@
 /* jQuery selectors */
 var $navItems = $('.nav-item');
+var $navElements = $('.nav-element');
+
+/* Global variables */
+var last_known_scroll_position = 0;
+var ticking = false;
 
 /* Functions used to dynamically allocate divs for personal data that has from
    one to many entries. */
@@ -260,10 +265,34 @@ buildEducation();
 buildExperience();
 buildFooter();
 
+/* Handle updating the navigation bar. */
+function updateNavBar(scroll_pos) {
+  for (i = $navElements.length - 1; i >= 0; i--) {
+    var top = $navElements[i].offsetTop;
+    if (scroll_pos >= top) {
+      var id = '#' + $navElements[i].id + 'Nav';
+      $navItems.removeClass('active');
+      $(id).addClass('active');
+      break;
+    }
+  }
+}
+
 /* Event handlers. */
 $navItems.on('click', function() {
   $navItems.removeClass('active');
   this.className += " active";
+});
+
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      updateNavBar(last_known_scroll_position);
+      ticking = false;
+    });
+    ticking = true;
+  }
 });
 
 /* Begin animation(s). */
