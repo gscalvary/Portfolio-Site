@@ -133,10 +133,10 @@ var experience =
       "role" : "Full Stack Developer",
       "accomplishments" : [
         {
-          "description" : "Worked on a complete re-write of Blizzard's game support portal: us.battle.net/support using Spring MVC, Java, Javascript, jQuery, Handlebars and Freemarker templating, Bootstrap, Sass, the Spock testing framework and the Scrum agile development methodology.  Developed various front and back-end features including integration into the World of Warcraft game client, a faceted search UI implementation and the site's back-end integration with Solr search.  This site is used worldwide, localized in over a dozen languages, and supported on many different browsers and form factors all supported by the small team on which I work."
+          "description" : "Worked on a complete re-write of Blizzard's game support portal: us.battle.net/support using the latest front and back-end technologies, a testing framework and the Scrum agile development methodology.  Developed various front and back-end features including integration into the World of Warcraft game client, a faceted search UI implementation and the site's back-end integration with our search engine.  This site is used worldwide, localized in over a dozen languages, and supported on many different browsers and form factors all supported by the small team on which I work."
         },
         {
-          "description" : "Helped build a highly customized Knowledge Centered Support (KCS) system for storing and curating Blizzard support articles housed within Salesforce.  Integrated the new KCS system with the Support Portal and all Blizzard game sites by constructing a system, using RabbitMQ and various REST calls, to publish Salesforce curated articles to the company's Solr search cores."
+          "description" : "Helped build a highly customized Knowledge Centered Support (KCS) system for storing and curating Blizzard support articles.  Integrated the new KCS system with the Support Portal and all Blizzard game sites by constructing a system, using message queuing and various REST calls, to publish curated articles to our search engine."
         },
         {
           "description" : "Working on several new self-service options that will automate solutions to common problems that customers must now contact a customer support representative to resolve.  This work entails both front and back-end work as well as colloboration with other Blizzard system teams to develop new APIs."
@@ -247,7 +247,7 @@ var featuredWork =
       "name" : "Tango Me",
       "date" : "Spring 2015",
       "shortDescription" : "An Exercise Game for Android",
-      "longDescription" : "Tango Me turns your mobile android device into a virtual dance partner using the accelerometer and other sensors.  Users are able to record themselves dancing and share via social media.  Solely responsible for concept, design and implementation.  On GooglePlay in Alpha, currently developing a release strategy.  Tango me was coded in Java using the Android SDK in Android Studio.  Source code is under Git version control.",
+      "longDescription" : "Tango Me turns your mobile android device into a virtual dance partner using the accelerometer and other sensors.  Users are able to record themselves dancing and share via social media.  Solely responsible for concept, design and implementation.  Tango me was coded in Java using the Android SDK in Android Studio.  Source code is under Git version control.",
       "image" : "images/TangoMe.jpg",
       "imageAlt" : "Tango Me Screen Shot",
       "codeLink" : "http://github.com/gscalvary/Tango-Me",
@@ -257,7 +257,7 @@ var featuredWork =
       "name" : "Word Fade",
       "date" : "Spring 2015",
       "shortDescription" : "A Word Game for Android",
-      "longDescription" : "Word Fade is a Scrabble like word game with single and two-player modes able to be played synchronously or asynchronously via the cloud.  Solely responsible for design and implementation.  On GooglePlay in Alpha.  Word Fade was coded in Java using the Android SDK in Android Studio.  Source code is under Git version control.  Data for the two-player version of the game is stored in the cloud using Parse Cloud Storage.  Messaging between players makes use of Google Cloud Messaging.",
+      "longDescription" : "Word Fade is a Scrabble like word game with single and two-player modes able to be played synchronously or asynchronously via the cloud.  Solely responsible for design and implementation.  Word Fade was coded in Java using the Android SDK in Android Studio.  Source code is under Git version control.  Data for the two-player version of the game is stored in the cloud using a third party cloud storage solution.  Messaging between players makes use of Google Cloud Messaging.",
       "image" : "images/WordFade.jpg",
       "imageAlt" : "Word Fade Screen Shot",
       "codeLink" : "",
