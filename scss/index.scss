@@ -1,0 +1,28 @@
+@import "_colors.scss";
+
+.img-responsive {
+  border: solid 1px $dark-brown;
+  transition: transform .4s;
+
+  &:hover {
+    transform: translateY(-.5rem);
+  }
+}
+
+.text-thin {
+  font-weight: 400;
+}
+
+body {
+  color: $dark-brown;
+  font-family: 'Candal', sans-serif;
+
+  .container-fluid {
+    padding: 20px 0;
+
+    .introduction {
+      margin: 70px 0;
+      display: none;
+    }
+  }
+}
