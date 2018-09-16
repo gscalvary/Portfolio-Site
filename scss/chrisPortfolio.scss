@@ -1,82 +1,83 @@
-/* color palette */
+@import "_colors.scss";
+
 .groovy-orange {
-  background-color: #e66221;
+  background-color: $orange;
 }
 
 .groovy-orange hr {
-  border-top: 1px solid #623a29;
+  border-top: 1px solid $dark-brown;
 }
 
 .groovy-mango {
-  background-color: #f7973a;
+  background-color: $mango;
 }
 
 .groovy-mango hr {
-  border-top: 1px solid #623a29;
+  border-top: 1px solid $dark-brown;
 }
 
 .groovy-gold {
-  background-color: #f8c862;
+  background-color: $gold;
 }
 
 .groovy-gold hr {
-  border-top: 1px solid #623a29;
+  border-top: 1px solid $dark-brown;
 }
 
 .groovy-gold .nav-tabs .active a {
-  background-color: #f1f2d0;
+  background-color: $cream;
   border: none;
   border-radius: 4px;
-  color: #623a29;
+  color: $dark-brown;
 }
 
 .groovy-gold .nav-tabs .active a:focus {
-  background-color: #f1f2d0;
+  background-color: $cream;
   border: none;
   border-radius: 4px;
-  color: #623a29;
+  color: $dark-brown;
 }
 
 .groovy-gold .nav-tabs .active a:hover {
-  background-color: #f1f2d0;
+  background-color: $cream;
   border: none;
   border-radius: 4px;
-  color: #623a29;
+  color: $dark-brown;
 }
 
 .groovy-gold .nav-tabs a:focus {
-  background-color: #f8c862;
+  background-color: $gold;
   border: none;
   border-radius: 4px;
-  color: #623a29;
+  color: $dark-brown;
 }
 
 .groovy-gold .nav-tabs a:hover {
-  background-color: #f8c862;
+  background-color: $gold;
   border: none;
   border-radius: 4px;
-  color: #623a29;
+  color: $dark-brown;
 }
 
 .groovy-cream {
-  background-color: #f1f2d0;
+  background-color: $cream;
 }
 
 .groovy-cream hr {
-  border-top: 1px solid #623a29;
+  border-top: 1px solid $dark-brown;
 }
 
 .groovy-chocolate {
-  background-color: #623a29;
-  color: #f1f2d0;
+  background-color: $dark-brown;
+  color: $cream;
 }
 
 .groovy-chocolate hr {
-  border-top: 1px solid #f1f2d0;
+  border-top: 1px solid $cream;
 }
 
 body {
-  color: #623a29;
+  color: $dark-brown;
   font-family: 'Candal', sans-serif;
 }
 
@@ -88,18 +89,18 @@ section {
 }
 
 #featured .img-responsive {
-  border: 1px solid #f1f2d0;
+  border: 1px solid $cream;
   cursor: pointer;
   transition: transform .4s;
 }
 
 #featured .img-responsive:hover {
-  border: 1px solid #623a29;
+  border: 1px solid $dark-brown;
   transform: translateY(-.3rem);
 }
 
 #pictures .img-responsive {
-  border: solid 1px #623a29;
+  border: solid 1px $dark-brown;
   transition: transform .4s;
 }
 
@@ -120,7 +121,7 @@ section {
 .background-img {
   background: url("../images/HeroHeader.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: #f1f2d0;
+  color: $cream;
 }
 
 .introduction {
@@ -154,7 +155,7 @@ section {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #623a29;
+  border-bottom: 1px solid $dark-brown;
 }
 
 .skill {
@@ -174,7 +175,7 @@ section {
 }
 
 .nav-item {
-  color: #f1f2d0;
+  color: $cream;
   display: block;
   font-size: 16px;
   font-weight: 700;
@@ -189,31 +190,31 @@ section {
 }
 
 .nav-item.active {
-  border: solid 1px #623a29;
-  color: #623a29;
+  border: solid 1px $dark-brown;
+  color: $dark-brown;
   opacity: 1;
 }
 
 .nav-item:active {
-  color: #f1f2d0;
+  color: $cream;
   opacity: 1;
   text-decoration: none;
 }
 
 .nav-item:focus {
-  color: #f1f2d0;
+  color: $cream;
   opacity: 1;
   text-decoration: none;
 }
 
 .nav-item:hover {
-  color: #f1f2d0;
+  color: $cream;
   opacity: 1;
   text-decoration: none;
 }
 
 .nav-item.active:hover {
-  color: #623a29;
+  color: $dark-brown;
   opacity: 1;
   text-decoration: none;
 }
