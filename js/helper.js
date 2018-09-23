@@ -11,7 +11,7 @@ var HTMLWorkImage = '<img class="img-responsive" src="%dataSrc%" alt="%dataAlt" 
 var HTMLWorkTitle = '<h3>%data%</h3>';
 var HTMLWorkSubTitle = '<h4>%data%</h4>';
 var HTMLWorkDate = '<h4>%data%</h4>';
-var HTMLWorkLink = '<p><a href="%dataLink%">%dataLinkText%</a></p>';
+var HTMLWorkLink = '<p><a href="%dataLink%" target="_blank">%dataLinkText%</a></p>';
 var HTMLdegree = '<h3>%data%</h3>';
 var HTMLschool = '<h3>%data%</h3>';
 var HTMLdatesAttended = '<h4>%data%</h4>';

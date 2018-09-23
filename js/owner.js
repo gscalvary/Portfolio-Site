@@ -18,88 +18,67 @@ var skills =
         { "name" : "Java"},
         { "name" : "HTML(5)"},
         { "name" : "JavaScript"},
-        { "name" : "jQuery"},
         { "name" : "CSS(3)"},
+        { "name" : "Groovy"},
         { "name" : "Sass"},
         { "name" : "SQL"},
-        { "name" : "Apex"},
-        { "name" : "Visualforce"},
-        { "name" : "SOQL"},
-        { "name" : "SOSL"},
-        { "name" : "JSON"},
         { "name" : "Unix Shell"},
-        { "name" : "Groovy"},
+        { "name" : "Apex"},
         { "name" : "C"},
+        { "name" : "Scala"},
         { "name" : "Python"},
-        { "name" : "Lua"},
-        { "name" : "C++"},
-        { "name" : "COBOL"},
-        { "name" : "JCL"}
+        { "name" : "C++"}
       ]
     },
     {
       "name" : "Datastores",
       "entries" : [
-        { "name" : "Couchbase"},
-        { "name" : "Solr"},
-        { "name" : "Salesforce"},
         { "name" : "Oracle"},
-        { "name" : "PostgreSQL"},
-        { "name" : "SQLite"},
+        { "name" : "Couchbase"},
+        { "name" : "Salesforce"},
         { "name" : "DB2"},
-        { "name" : "VSAM"},
-        { "name" : "Sybase"}
+        { "name" : "PostgreSQL"},
+        { "name" : "SQLite"}
       ]
     },
     {
-      "name" : "Tools",
+      "name" : "Pipeline",
       "entries" : [
-        { "name" : "IntelliJ"},
-        { "name" : "Atom"},
         { "name" : "Git"},
         { "name" : "Gradle"},
+        { "name" : "Jenkins"},
         { "name" : "Maven"},
-        { "name" : "Android Studio"},
+        { "name" : "sbt"},
         { "name" : "pgAdmin3"},
         { "name" : "Ant"},
-        { "name" : "Eclipse RDz"},
-        { "name" : "Xcode"},
-        { "name" : "MS Visual Studio"},
-        { "name" : "ISPF"},
-        { "name" : "Rapid SQL"},
-        { "name" : "Subversion"},
-        { "name" : "Endevor"},
-        { "name" : "Maya"},
-        { "name" : "DrRacket"}
+        { "name" : "npm"},
+        { "name" : "gulp"}
+      ]
+    },
+    {
+      "name" : "Strategies",
+      "entries" : [
+        { "name" : "Trunk"},
+        { "name" : "Scrum"},
+        { "name" : "Agile"},
+        { "name" : "Waterfall"}
       ]
     },
     {
       "name" : "Frameworks",
       "entries" : [
-        { "name" : "Docker"},
-        { "name" : "Spring MVC"},
-        { "name" : "Freemarker"},
-        { "name" : "Handlebars"},
-        { "name" : "Bootstrap"},
+        { "name" : "Solr"},
         { "name" : "RabbitMQ"},
+        { "name" : "Bootstrap"},
+        { "name" : "jQuery"},
+        { "name" : "Spock"},
+        { "name" : "Freemarker"},
+        { "name" : "Spring MVC"},
         { "name" : "Unsemantic"},
-        { "name" : "Android SDK"},
-        { "name" : "OpenGL"},
-        { "name" : "Google Cloud Messaging"},
-        { "name" : "Virtual Box"},
-        { "name" : "GLFW"},
-        { "name" : "Box2D"},
-        { "name" : "CBMC"},
-        { "name" : "CICS"}
-      ]
-    },
-    {
-      "name" : "OSs",
-      "entries" : [
-        { "name" : "Windows"},
-        { "name" : "Linux"},
-        { "name" : "OSX"},
-        { "name" : "zOS"}
+        { "name" : "Docker"},
+        { "name" : "Handlebars"},
+        { "name" : "Hibernate"},
+        { "name" : "Android SDK"}
       ]
     }
   ]
@@ -133,7 +112,7 @@ var experience =
       "role" : "Full Stack Developer",
       "accomplishments" : [
         {
-          "description" : "Worked on a complete re-write of Blizzard's game support portal: us.battle.net/support using the latest front and back-end technologies, a testing framework and the Scrum agile development methodology.  Developed various front and back-end features including integration into the World of Warcraft game client, a faceted search UI implementation and the site's back-end integration with our search engine.  This site is used worldwide, localized in over a dozen languages, and supported on many different browsers and form factors all supported by the small team on which I work."
+          "description" : "Worked on a complete re-write of Blizzard's game support portal, support.blizzard.com, using the latest front and back-end technologies, a testing framework and the Scrum agile development methodology.  Developed various front and back-end features including integration into the World of Warcraft game client, a faceted search UI implementation and the site's back-end integration with our search engine.  This site is used worldwide, localized in over a dozen languages, and supported on many different browsers and form factors all supported by the small team on which I work."
         },
         {
           "description" : "Helped build a highly customized Knowledge Centered Support (KCS) system for storing and curating Blizzard support articles.  Integrated the new KCS system with the Support Portal and all Blizzard game sites by constructing a system, using message queuing and various REST calls, to publish curated articles to our search engine."
@@ -164,7 +143,7 @@ var experience =
       "role" : "Development lead, extended architect.",
       "accomplishments" : [
         {
-          "description" : "Modernized a large, mission critical transfer agent system by porting it’s back-end web services to process against a relational database.  These services support all customer data view and update operations for advisor.fidelity.com and run concurrently with long-running batch processes that also update the database.  Lead developer for both on-shore and off-shore development teams."
+          "description" : "Modernized a large, mission critical transfer agent system by porting it’s back-end web services to process against a relational database.  These services support all customer data view and update operations for institutional.fidelity.com and run concurrently with long-running batch processes that also update the database.  Lead developer for both on-shore and off-shore development teams."
         },
         {
           "description" : "Rewrote the core batch and on-line software responsible for the systematic buying and selling of Fidelity mutual funds, including minimum retirement distributions from 401k accounts, directly from customer bank accounts.  Delivered several user interface tweaks and a complete batch redesign for performance improvements.  Led design, development, testing and implementation phases."
@@ -223,6 +202,26 @@ var experience =
 var featuredWork =
 {
   "projects" : [
+    {
+      "name" : "Machine Learning Library",
+      "date" : "Summer 2018",
+      "shortDescription" : "Under Active Development",
+      "longDescription" : "Currently building a machine learning library in Scala using the FunSuite framework for testing and the sbt for building. I am doing this as a learning exercise after having taken an edX Machine Learning class.  Solely responsible for design and implementation.  Using Git for code version control.",
+      "image" : "images/MachineLearning.jpg",
+      "imageAlt" : "Source Code Screen Shot",
+      "codeLink" : "http://github.com/gscalvary/machine_learning",
+      "codeLinkDesc" : "See the code on GitHub"
+    },
+    {
+      "name" : "Linear Algebra Library",
+      "date" : "Spring 2017",
+      "shortDescription" : "Implemented the Basics",
+      "longDescription" : "Designed and built a linear algebra library in Java with tests written in Groovy using the Spock test framework. I did this as a learning exercise primarily to lay the foundation for further study of AI and ML.  Solely responsible for design and implementation.  I used Git for code version control.",
+      "image" : "images/LinearAlgebra.jpg",
+      "imageAlt" : "Source Code Screen Shot",
+      "codeLink" : "http://github.com/gscalvary/linear-algebra",
+      "codeLinkDesc" : "See the code on GitHub"
+    },
     {
       "name" : "This!",
       "date" : "Summer 2015",
