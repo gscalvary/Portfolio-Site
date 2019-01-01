@@ -106,9 +106,20 @@ var experience =
 {
   "jobs" : [
     {
+      "title" : "Senior Software Engineer",
+      "company" : "Apple - Austin, TX",
+      "datesWorked" : "November 2018 - present",
+      "role" : "Java/Scala Software Engineer",
+      "accomplishments" : [
+        {
+          "description" : "Work as part of a new engineering team responsible for the Apple online store bag and checkout experience. Build new and maintain existing site features in an agile environment."
+        }
+      ]
+    },
+    {
       "title" : "Java Software Engineer",
       "company" : "Blizzard Entertainment - Austin, TX",
-      "datesWorked" : "August 2015 - present",
+      "datesWorked" : "August 2015 - November 2018",
       "role" : "Full Stack Developer",
       "accomplishments" : [
         {
