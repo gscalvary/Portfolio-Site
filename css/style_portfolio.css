@@ -1,0 +1,225 @@
+/* style_portfolio.css */
+
+body {
+	max-width: 1020px;
+	padding-top: 20px;
+	padding-bottom: 100px;
+	margin: 0 auto;
+	background-color:#cccccc;
+	
+}
+
+
+figcaption {
+	color:  #2C9AB7;
+	font-family: "Bellefair","serif";
+	font-size: 1.5em;
+	padding-top: 5px; 
+	}
+	
+.masthead {
+background: linear-gradient(to bottom, rgba(0,0,0,0.25),rgba(0,0,0,0.75));
+background: -moz-linear-gradient(top, rgba(0,0,0,0.25),rgba(0,0,0,0.75));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.25),rgba(0,0,0,0.75));
+background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 2em;
+  font-family: "Julius Sans One", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "sans-serif";
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  line-height: 80%;
+ background-color:#B3D452;
+}
+
+#wrapper {
+	width: 100%;
+	background-color:white;
+border-bottom: thick solid #2C9AB7;
+border-top: thick solid #2C9AB7;
+border-radius: 10px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+#footer{
+  font-size: .8em;
+    color: gray;
+	font-family:  "Julius Sans One", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "sans-serif";
+		padding-left: 15px;
+	padding-right: 15px;
+}
+
+#subhead {
+    font-family: "Julius Sans One", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "sans-serif";
+    text-align: center; 
+    font-size: 2em;
+    color: #fff;
+    opacity: 1;
+}
+
+#headshot {	
+padding-right: 70px;
+padding-bottom: 30px;
+	float: right;
+	clear: right;
+}
+
+#logo {	
+padding-right: 20px;
+	padding-bottom: 30px;
+	float: right;
+	clear: right;
+}
+
+	
+/*tables*/
+
+.spacer {
+  height: 20px;
+  padding-bottom: 30px;
+}
+
+#tableWork {
+padding-right: 15px;
+padding-left:15px;
+	padding-top: 15px;
+	padding-bottom:65px;
+}
+
+#tableVideo {
+padding-right: 30px;
+padding-left:15px;
+	padding-top: 15px;
+	padding-bottom:65px;
+}
+
+#tablePhotoshop {
+	padding-right: 15px;
+padding-left:15px;
+	padding-bottom: 5px;
+}
+
+#tablePhotography {
+padding-left: 35px;
+	padding-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+/*content box*/
+
+#contentBox {
+max-width: 962px;
+max-height:700px;
+  color:  #2C9AB7;
+  font-size: 2em;
+  text-align: left;
+ margin-left: 15px;
+  padding-top: 15px;
+	font-family: "Bellefair","serif";
+}
+
+#contentBoxIndex {
+   max-width: 962px;
+max-height:700px;
+  color:  #2C9AB7;
+  font-size: 2em;
+  text-align: left;
+ margin-left: 15px;
+  padding-top: 15px;
+	font-family: "Bellefair","serif";
+}
+
+#contentBoxPhotoshop {
+  max-width: 962px;
+max-height:700px;
+  color:  #2C9AB7;
+  font-size: 2em;
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 15px;
+	font-family: "Bellefair","serif";
+}
+
+#contentBoxVideo {
+   max-width: 962px;
+max-height:700px;
+  color:  #2C9AB7;
+  font-size: 2em;
+  text-align: left;
+ margin-left: 15px;
+  padding-top: 15px;
+	font-family: "Bellefair","serif";
+}
+
+#contentBoxWork {
+   max-width: 962px;
+max-height:700px;
+  color:  #2C9AB7;
+  font-size: 2em;
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 15px;
+	font-family: "Bellefair","serif";
+}
+
+#ContentBoxVideoSample {
+padding-left: 60px;
+	padding-bottom:15px;
+}
+
+#contentBoxPhotography {
+  max-width: 962px;
+max-height:700px;
+  color:  #2C9AB7;
+  font-size: 2em;
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 15px;
+	font-family: "Bellefair","serif";
+}
+
+
+/*nav menu*/
+
+ul {
+    font-size: 1.2em;
+}
+
+li a.activeMenu {
+    color: gray;
+opacity: 1.0;
+font-style: italic; 
+
+}
+
+/*videos*/
+    
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  {
+    background: #ccc;
+}
+ }
+ 
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  {
+    background: #ccc;
+}
+  }
+
+video {
+  width: 50% !important;
+  height: auto !important;
+  margin: 0 auto;
+  display: block;
+}
+
+iframe {
+    display: block;
+    width: 800px;
+    height: 335px;
+    margin: 0 auto;
+    border: 0;
+}
+}
