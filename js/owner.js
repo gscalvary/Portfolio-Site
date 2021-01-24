@@ -112,7 +112,7 @@ var experience =
       "title" : "Sr. Software Engineer II",
       "company" : "Raytheon Technologies - Portsmouth, RI",
       "datesWorked" : "January 2020 - Present",
-      "role" : "Software Engineer - Internal Research and Development",
+      "role" : "Software Engineer - Research and Development",
       "accomplishments" : [
         {
           "description" : "Work on internal and DARPA funded research and development projects related to solving complex planning and resource management problems."
