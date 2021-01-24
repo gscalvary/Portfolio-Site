@@ -6,7 +6,7 @@ var bio =
   "name" : "Christopher Oliver",
   "role" : ["Software Engineer", "Full Stack Developer", "Computer Scientist", "Techie"],
   "welcomeMessage" : "I am a creative, self-motivated, and highly organized developer with over fifteen years of programming experience building and supporting business critical, continuously available, large-scale computing systems.  I love to learn and am constantly exploring new technologies.",
-  "location" : "Austin, TX"
+  "location" : "United States, Planet Earth"
 };
 
 var skills =
@@ -33,8 +33,10 @@ var skills =
     {
       "name" : "Datastores",
       "entries" : [
+        { "name" : "MongoDB"},
         { "name" : "Oracle"},
         { "name" : "Couchbase"},
+        { "name" : "Solr"},
         { "name" : "Salesforce"},
         { "name" : "DB2"},
         { "name" : "PostgreSQL"},
@@ -46,13 +48,16 @@ var skills =
       "entries" : [
         { "name" : "Git"},
         { "name" : "Gradle"},
-        { "name" : "Jenkins"},
         { "name" : "Maven"},
-        { "name" : "sbt"},
-        { "name" : "pgAdmin3"},
-        { "name" : "Ant"},
         { "name" : "npm"},
-        { "name" : "gulp"}
+        { "name" : "gulp"},
+        { "name" : "Docker"},
+        { "name" : "Jenkins"},
+        { "name" : "Artifactory"},
+        { "name" : "Kubernetes"},
+        { "name" : "Helm"},
+        { "name" : "OpenShift"},
+        { "name" : "ArgoCD"}
       ]
     },
     {
@@ -67,17 +72,15 @@ var skills =
     {
       "name" : "Frameworks",
       "entries" : [
-        { "name" : "Solr"},
         { "name" : "RabbitMQ"},
         { "name" : "Bootstrap"},
         { "name" : "jQuery"},
+        { "name" : "jUnit"},
+        { "name" : "Mockito"},
         { "name" : "Spock"},
         { "name" : "Freemarker"},
         { "name" : "Spring MVC"},
         { "name" : "Unsemantic"},
-        { "name" : "Docker"},
-        { "name" : "Handlebars"},
-        { "name" : "Hibernate"},
         { "name" : "Android SDK"}
       ]
     }
@@ -106,13 +109,27 @@ var experience =
 {
   "jobs" : [
     {
-      "title" : "Senior Software Engineer",
+      "title" : "Sr. Software Engineer II",
+      "company" : "Raytheon Technologies - Portsmouth, RI",
+      "datesWorked" : "January 2020 - Present",
+      "role" : "Software Engineer - Internal Research and Development",
+      "accomplishments" : [
+        {
+          "description" : "Work on internal and DARPA funded research and development projects related to solving complex planning and resource management problems."
+        },
+        {
+          "description" : "Design and implement containerized micro-service based systems deployed to Kubernetes managed compute clusters using modern CI/CD pipelines and agile development methodologies."
+        }
+      ]
+    },
+    {
+      "title" : "Sr. Software Engineer",
       "company" : "Apple - Austin, TX",
-      "datesWorked" : "November 2018 - present",
+      "datesWorked" : "November 2018 - October 2019",
       "role" : "Java/Scala Software Engineer",
       "accomplishments" : [
         {
-          "description" : "Work as part of a new engineering team responsible for the Apple online store bag and checkout experience. Build new and maintain existing site features in an agile environment."
+          "description" : "Helped to build and lead a new engineering team responsible for the Apple online store bag and checkout experience for Apple customers across Asia. Built new and maintained existing site features in an agile environment."
         }
       ]
     },
@@ -174,7 +191,7 @@ var experience =
       ]
     },
     {
-      "title" : "Senior Software Engineer",
+      "title" : "Sr. Software Engineer",
       "company" : "Fidelity Investments, FBCT - Boston, MA",
       "datesWorked" : "Oct 2005 - Oct 2006",
       "role" : "Mainframe developer.",
@@ -188,7 +205,7 @@ var experience =
       ]
     },
     {
-      "title" : "Senior Software Engineer",
+      "title" : "Sr. Software Engineer",
       "company" : "Fidelity Investments, FPCMS - Boston, MA",
       "datesWorked" : "July 2001 - Oct 2005",
       "role" : "Mainframe developer.",
