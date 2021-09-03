@@ -109,16 +109,16 @@ var experience =
 {
   "jobs" : [
     {
-      "title" : "Sr. Software Engineer II",
+      "title" : "Principal Software Engineer",
       "company" : "Raytheon Technologies - Portsmouth, RI",
       "datesWorked" : "January 2020 - Present",
       "role" : "Software Engineer - Research and Development",
       "accomplishments" : [
         {
-          "description" : "Work on internal and DARPA funded research and development projects related to solving complex planning and resource management problems."
+          "description" : "Work on research and development projects related to solving complex planning and resource management problems."
         },
         {
-          "description" : "Design and implement containerized micro-service based systems deployed to Kubernetes managed compute clusters using modern CI/CD pipelines and agile development methodologies."
+          "description" : "Design and implement cloud native, containerized micro-service based systems deployed to Kubernetes implementations using modern CI/CD pipelines and agile development methodologies."
         }
       ]
     },
