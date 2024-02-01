@@ -110,12 +110,26 @@ var experience =
   "jobs" : [
     {
       "title" : "Principal Software Engineer",
-      "company" : "Raytheon Technologies - Portsmouth, RI",
-      "datesWorked" : "January 2020 - Present",
-      "role" : "Software Engineer - Research and Development",
+      "company" : "Fidelity Investments - Smithfield, RI",
+      "datesWorked" : "July 2023 - September 2023",
+      "role" : "Technical Lead - Innovation Squad",
       "accomplishments" : [
         {
-          "description" : "Work on research and development projects related to solving complex planning and resource management problems."
+          "description" : "Led a small, distributed team tasked with using emerging technologies to help our asset managers realize efficiencies related to compliance."
+        },
+        {
+          "description" : "Used machine learning algorithms, implemented in both PyTorch and TensorFlow, to improve an application that analyzes mutual fund prospectuses to automatically identify compliance rules that must be followed by the asset managers."
+        }
+      ]
+    },
+    {
+      "title" : "Principal Software Engineer",
+      "company" : "Raytheon Technologies - Portsmouth, RI",
+      "datesWorked" : "January 2020 - July 2023",
+      "role" : "Technical Lead - Research and Development",
+      "accomplishments" : [
+        {
+          "description" : "Worked on research and development projects related to solving complex planning and resource management problems."
         },
         {
           "description" : "Design and implement cloud native, containerized micro-service based systems deployed to Kubernetes implementations using modern CI/CD pipelines and agile development methodologies."
@@ -149,7 +163,7 @@ var experience =
           "description" : "Working on several new self-service options that will automate solutions to common problems that customers must now contact a customer support representative to resolve.  This work entails both front and back-end work as well as colloboration with other Blizzard system teams to develop new APIs."
         },
         {
-          "description" : "Particpate in a 24/7 production support rotation.  Perform code reviews, system analysis for upcoming initiatives as well as write system documentation."
+          "description" : "Participate in a 24/7 production support rotation.  Perform code reviews, system analysis for upcoming initiatives as well as write system documentation."
         }
       ]
     },
