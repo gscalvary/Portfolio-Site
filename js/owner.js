@@ -16,8 +16,10 @@ var skills =
       "name" : "Languages",
       "entries" : [
         { "name" : "Java"},
-        { "name" : "HTML(5)"},
+        { "name" : "Python"},
+        { "name" : "Go"},
         { "name" : "JavaScript"},
+        { "name" : "HTML(5)"},
         { "name" : "CSS(3)"},
         { "name" : "Groovy"},
         { "name" : "Sass"},
@@ -26,7 +28,6 @@ var skills =
         { "name" : "Apex"},
         { "name" : "C"},
         { "name" : "Scala"},
-        { "name" : "Python"},
         { "name" : "C++"}
       ]
     },
@@ -54,9 +55,11 @@ var skills =
         { "name" : "Docker"},
         { "name" : "Jenkins"},
         { "name" : "Artifactory"},
+        { "name" : "AWS"},
         { "name" : "Kubernetes"},
         { "name" : "Helm"},
         { "name" : "OpenShift"},
+        { "name" : "Rancher"},
         { "name" : "ArgoCD"}
       ]
     },
@@ -72,6 +75,7 @@ var skills =
     {
       "name" : "Frameworks",
       "entries" : [
+        { "name" : "Spring Boot"},
         { "name" : "RabbitMQ"},
         { "name" : "Bootstrap"},
         { "name" : "jQuery"},
